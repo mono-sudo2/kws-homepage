@@ -1,26 +1,79 @@
-@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Fredoka+One&display=swap");
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--background: 40 33% 96%;
+		--foreground: 150 30% 12%;
+
+		--card: 40 30% 98%;
+		--card-foreground: 150 30% 12%;
+
+		--popover: 40 30% 98%;
+		--popover-foreground: 150 30% 12%;
+
+		--primary: 145 45% 32%;
+		--primary-foreground: 40 33% 98%;
+
+		--secondary: 145 25% 88%;
+		--secondary-foreground: 145 45% 22%;
+
+		--muted: 40 20% 92%;
+		--muted-foreground: 150 10% 45%;
+
+		--accent: 30 90% 55%;
+		--accent-foreground: 30 90% 15%;
+
+		--destructive: 0 84.2% 60.2%;
+		--destructive-foreground: 210 40% 98%;
+
+		--border: 145 15% 82%;
+		--input: 145 15% 82%;
+		--ring: 145 45% 32%;
+
+		--radius: 0.75rem;
+
+		--forest-light: 145 35% 90%;
+		--forest-medium: 145 40% 45%;
+		--forest-dark: 145 50% 18%;
+		--amber: 30 90% 55%;
+		--amber-light: 35 90% 92%;
+		--cream: 40 33% 96%;
+
+		--sidebar-background: 0 0% 98%;
+		--sidebar-foreground: 240 5.3% 26.1%;
+		--sidebar-primary: 240 5.9% 10%;
+		--sidebar-primary-foreground: 0 0% 98%;
+		--sidebar-accent: 240 4.8% 95.9%;
+		--sidebar-accent-foreground: 240 5.9% 10%;
+		--sidebar-border: 220 13% 91%;
+		--sidebar-ring: 217.2 91.2% 59.8%;
+	}
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer base {
+	* {
+		@apply border-border;
+	}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+	body {
+		@apply bg-background text-foreground font-sans;
+		font-family: "Nunito", sans-serif;
+	}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: "Fredoka One", cursive;
+	}
+
+	html {
+		scroll-behavior: smooth;
+	}
 }

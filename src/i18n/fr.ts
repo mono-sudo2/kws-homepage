@@ -405,7 +405,7 @@ export const fr: Translations = {
 		parking: {
 			title: "Accès & Parking",
 			description:
-				"Parking gratuit directement au parc d'escalade. Adresse : Waldweg 12, 79219 Staufen im Breisgau. Facilement accessible par la B31.",
+				"Parking gratuit directement au parc d'escalade. Adresse : Etzenbach 1, 79219 Staufen im Breisgau. Facilement accessible par la B31.",
 		},
 		publicTransport: {
 			title: "Transports en commun",

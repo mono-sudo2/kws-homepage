@@ -403,7 +403,7 @@ export const en: Translations = {
 		parking: {
 			title: "Getting Here & Parking",
 			description:
-				"Free parking right at the climbing forest. Address: Waldweg 12, 79219 Staufen im Breisgau. Easily accessible via the B31.",
+				"Free parking right at the climbing forest. Address: Etzenbach 1, 79219 Staufen im Breisgau. Easily accessible via the B31.",
 		},
 		publicTransport: {
 			title: "Public Transport",

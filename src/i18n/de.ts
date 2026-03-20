@@ -413,7 +413,7 @@ export const de = {
 		parking: {
 			title: "Anfahrt & Parken",
 			description:
-				"Kostenlose Parkplätze direkt am Kletterwald. Adresse: Waldweg 12, 79219 Staufen im Breisgau. Gut erreichbar über die B31.",
+				"Kostenlose Parkplätze direkt am Kletterwald. Adresse: Etzenbach 1, 79219 Staufen im Breisgau. Gut erreichbar über die B31.",
 		},
 		publicTransport: {
 			title: "ÖPNV",

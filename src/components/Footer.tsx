@@ -1,10 +1,4 @@
-import {
-	MapPin,
-	Phone,
-	Mail,
-	Facebook,
-	Instagram,
-} from "lucide-react";
+import { MapPin, Phone, Mail, Facebook, Instagram } from "lucide-react";
 import Link from "next/link";
 import logo from "@/assets/logo.png";
 import { useLanguage } from "@/i18n/LanguageContext";
@@ -113,7 +107,7 @@ const Footer = () => {
 								},
 								{
 									icon: Instagram,
-									href: "https://www.instagram.com/kletterwald_staufen/",
+									href: "https://www.instagram.com/kletterwaldstaufen/",
 								},
 							].map(({ icon: Icon, href }, i) => (
 								<a

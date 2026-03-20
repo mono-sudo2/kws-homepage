@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/metadata";
+import { de } from "@/i18n";
 
-export const metadata: Metadata = {
-  title: "Kontakt · Kletterwald Staufen",
-  description:
-    "Kontaktiere den Kletterwald Staufen für Fragen, Reservierungen und Gruppenanfragen. Wir helfen dir gerne weiter.",
-};
+export const metadata: Metadata = buildMetadata(de.meta.kontakt, "/kontakt");
 
 export default function KontaktLayout({
   children,

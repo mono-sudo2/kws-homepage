@@ -319,6 +319,55 @@ export const en: Translations = {
       fileTooLarge: "exceeds the 10 MB limit",
     },
   },
+  meta: {
+    home: {
+      title: "Kletterwald Staufen – Adventure in the Black Forest",
+      description:
+        "Experience climbing adventures at the largest climbing park in southern Baden. 15+ courses, 200+ climbing elements – fun for the whole family in the Black Forest.",
+    },
+    impressum: {
+      title: "Imprint · Kletterwald Staufen",
+      description: "Imprint of Kletterwald Staufen – Information according to § 5 TMG.",
+    },
+    ueberUns: {
+      title: "About Us · Kletterwald Staufen",
+      description:
+        "Learn more about Kletterwald Staufen – the largest climbing park in southern Baden for over 15 years, with passion, safety and nature.",
+    },
+    kontakt: {
+      title: "Contact · Kletterwald Staufen",
+      description:
+        "Contact Kletterwald Staufen for questions, reservations and group inquiries. We're happy to help.",
+    },
+    preise: {
+      title: "Prices & Tickets · Kletterwald Staufen",
+      description:
+        "Fair prices for children, teenagers and adults at Kletterwald Staufen. Secure your tickets and experience climbing adventures.",
+    },
+    oeffnungszeiten: {
+      title: "Opening Hours · Kletterwald Staufen",
+      description:
+        "Current opening hours of Kletterwald Staufen. Season, holidays and special opening hours at a glance.",
+    },
+    jobs: {
+      title: "Jobs · Kletterwald Staufen",
+      description:
+        "Open positions at Kletterwald Staufen. Join our team and work in the nature of the Black Forest.",
+    },
+    datenschutz: {
+      title: "Privacy Policy · Kletterwald Staufen",
+      description:
+        "Privacy policy of Kletterwald Staufen – Information on how we handle your data.",
+    },
+    agb: {
+      title: "Terms & Conditions · Kletterwald Staufen",
+      description: "Terms and conditions of Kletterwald Staufen.",
+    },
+    notFound: {
+      title: "Page not found · Kletterwald Staufen",
+      description: "The requested page could not be found.",
+    },
+  },
   impressumPage: { title: "Imprint", content: "Content coming soon." },
   datenschutzPage: { title: "Privacy Policy", content: "Content coming soon." },
   agbPage: { title: "Terms & Conditions", content: "Content coming soon." },

@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/metadata";
+import { de } from "@/i18n";
 
-export const metadata: Metadata = {
-  title: "AGB · Kletterwald Staufen",
-  description: "Allgemeine Geschäftsbedingungen des Kletterwald Staufen.",
-};
+export const metadata: Metadata = buildMetadata(de.meta.agb, "/agb");
 
 export default function AgbLayout({
   children,

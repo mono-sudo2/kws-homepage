@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/metadata";
+import { de } from "@/i18n";
 
-export const metadata: Metadata = {
-  title: "Jobs · Kletterwald Staufen",
-  description:
-    "Offene Stellen im Kletterwald Staufen. Werde Teil unseres Teams und arbeite in der Natur des Schwarzwalds.",
-};
+export const metadata: Metadata = buildMetadata(de.meta.jobs, "/jobs");
 
 export default function JobsLayout({
   children,

@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/metadata";
+import { de } from "@/i18n";
 
-export const metadata: Metadata = {
-  title: "Preise & Tickets · Kletterwald Staufen",
-  description:
-    "Faire Preise für Kinder, Jugendliche und Erwachsene im Kletterwald Staufen. Jetzt Tickets sichern und Kletterabenteuer erleben.",
-};
+export const metadata: Metadata = buildMetadata(de.meta.preise, "/preise");
 
 export default function PreiseLayout({
   children,

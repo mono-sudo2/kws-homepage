@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/metadata";
+import { de } from "@/i18n";
 
-export const metadata: Metadata = {
-  title: "Datenschutz · Kletterwald Staufen",
-  description:
-    "Datenschutzerklärung des Kletterwald Staufen – Informationen zum Umgang mit deinen Daten.",
-};
+export const metadata: Metadata = buildMetadata(de.meta.datenschutz, "/datenschutz");
 
 export default function DatenschutzLayout({
   children,

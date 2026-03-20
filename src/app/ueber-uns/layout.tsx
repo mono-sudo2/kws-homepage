@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/metadata";
+import { de } from "@/i18n";
 
-export const metadata: Metadata = {
-  title: "Über uns · Kletterwald Staufen",
-  description:
-    "Erfahre mehr über den Kletterwald Staufen – seit über 15 Jahren der größte Kletterpark in Südbaden mit Leidenschaft, Sicherheit und Natur.",
-};
+export const metadata: Metadata = buildMetadata(de.meta.ueberUns, "/ueber-uns");
 
 export default function UeberUnsLayout({
   children,

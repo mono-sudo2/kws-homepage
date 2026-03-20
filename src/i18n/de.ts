@@ -318,6 +318,55 @@ export const de = {
       fileTooLarge: "überschreitet das 10 MB Limit",
     },
   },
+  meta: {
+    home: {
+      title: "Kletterwald Staufen – Abenteuer im Schwarzwald",
+      description:
+        "Erlebe Kletterabenteuer im größten Kletterpark Südbadens. 15+ Parcours, 200+ Kletter-Elemente – Spaß für die ganze Familie im Schwarzwald.",
+    },
+    impressum: {
+      title: "Impressum · Kletterwald Staufen",
+      description: "Impressum des Kletterwald Staufen – Angaben gemäß § 5 TMG.",
+    },
+    ueberUns: {
+      title: "Über uns · Kletterwald Staufen",
+      description:
+        "Erfahre mehr über den Kletterwald Staufen – seit über 15 Jahren der größte Kletterpark in Südbaden mit Leidenschaft, Sicherheit und Natur.",
+    },
+    kontakt: {
+      title: "Kontakt · Kletterwald Staufen",
+      description:
+        "Kontaktiere den Kletterwald Staufen für Fragen, Reservierungen und Gruppenanfragen. Wir helfen dir gerne weiter.",
+    },
+    preise: {
+      title: "Preise & Tickets · Kletterwald Staufen",
+      description:
+        "Faire Preise für Kinder, Jugendliche und Erwachsene im Kletterwald Staufen. Jetzt Tickets sichern und Kletterabenteuer erleben.",
+    },
+    oeffnungszeiten: {
+      title: "Öffnungszeiten · Kletterwald Staufen",
+      description:
+        "Aktuelle Öffnungszeiten des Kletterwald Staufen. Saison, Feiertage und Sonderöffnungszeiten auf einen Blick.",
+    },
+    jobs: {
+      title: "Jobs · Kletterwald Staufen",
+      description:
+        "Offene Stellen im Kletterwald Staufen. Werde Teil unseres Teams und arbeite in der Natur des Schwarzwalds.",
+    },
+    datenschutz: {
+      title: "Datenschutz · Kletterwald Staufen",
+      description:
+        "Datenschutzerklärung des Kletterwald Staufen – Informationen zum Umgang mit deinen Daten.",
+    },
+    agb: {
+      title: "AGB · Kletterwald Staufen",
+      description: "Allgemeine Geschäftsbedingungen des Kletterwald Staufen.",
+    },
+    notFound: {
+      title: "Seite nicht gefunden · Kletterwald Staufen",
+      description: "Die gesuchte Seite wurde nicht gefunden.",
+    },
+  },
   impressumPage: { title: "Impressum", content: "Inhalt folgt." },
   datenschutzPage: { title: "Datenschutz", content: "Inhalt folgt." },
   agbPage: { title: "AGB", content: "Inhalt folgt." },

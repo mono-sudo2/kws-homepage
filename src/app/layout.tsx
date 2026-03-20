@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Providers } from "./providers";
+import { buildMetadata } from "@/lib/metadata";
+import { de } from "@/i18n";
 
-export const metadata: Metadata = {
-  title: "Kletterwald Staufen – Abenteuer im Schwarzwald",
-  description:
-    "Erlebe Kletterabenteuer im größten Kletterpark Südbadens. 15+ Parcours, 200+ Kletter-Elemente – Spaß für die ganze Familie im Schwarzwald.",
-};
+export const metadata: Metadata = buildMetadata(de.meta.home);
 
 export default function RootLayout({
   children,

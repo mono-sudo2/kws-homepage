@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/metadata";
+import { de } from "@/i18n";
 
-export const metadata: Metadata = {
-  title: "Öffnungszeiten · Kletterwald Staufen",
-  description:
-    "Aktuelle Öffnungszeiten des Kletterwald Staufen. Saison, Feiertage und Sonderöffnungszeiten auf einen Blick.",
-};
+export const metadata: Metadata = buildMetadata(de.meta.oeffnungszeiten, "/oeffnungszeiten");
 
 export default function OeffnungszeitenLayout({
   children,

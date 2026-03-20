@@ -319,6 +319,55 @@ export const fr: Translations = {
       fileTooLarge: "dépasse la limite de 10 Mo",
     },
   },
+  meta: {
+    home: {
+      title: "Kletterwald Staufen – Aventure en Forêt-Noire",
+      description:
+        "Vivez des aventures d'escalade dans le plus grand parc d'escalade du sud du Bade. 15+ parcours, 200+ éléments – plaisir pour toute la famille en Forêt-Noire.",
+    },
+    impressum: {
+      title: "Mentions légales · Kletterwald Staufen",
+      description: "Mentions légales du Kletterwald Staufen – Informations conformes au § 5 TMG.",
+    },
+    ueberUns: {
+      title: "À propos · Kletterwald Staufen",
+      description:
+        "Découvrez le Kletterwald Staufen – le plus grand parc d'escalade du sud du Bade depuis plus de 15 ans, avec passion, sécurité et nature.",
+    },
+    kontakt: {
+      title: "Contact · Kletterwald Staufen",
+      description:
+        "Contactez le Kletterwald Staufen pour vos questions, réservations et demandes de groupe. Nous sommes là pour vous aider.",
+    },
+    preise: {
+      title: "Tarifs & Billets · Kletterwald Staufen",
+      description:
+        "Tarifs équitables pour enfants, adolescents et adultes au Kletterwald Staufen. Réservez vos billets et vivez l'aventure d'escalade.",
+    },
+    oeffnungszeiten: {
+      title: "Horaires · Kletterwald Staufen",
+      description:
+        "Horaires d'ouverture actuels du Kletterwald Staufen. Saison, jours fériés et horaires spéciaux en un coup d'œil.",
+    },
+    jobs: {
+      title: "Emplois · Kletterwald Staufen",
+      description:
+        "Postes ouverts au Kletterwald Staufen. Rejoignez notre équipe et travaillez au cœur de la nature en Forêt-Noire.",
+    },
+    datenschutz: {
+      title: "Confidentialité · Kletterwald Staufen",
+      description:
+        "Politique de confidentialité du Kletterwald Staufen – Informations sur le traitement de vos données.",
+    },
+    agb: {
+      title: "CGV · Kletterwald Staufen",
+      description: "Conditions générales du Kletterwald Staufen.",
+    },
+    notFound: {
+      title: "Page non trouvée · Kletterwald Staufen",
+      description: "La page demandée est introuvable.",
+    },
+  },
   impressumPage: { title: "Mentions légales", content: "Contenu à venir." },
   datenschutzPage: { title: "Confidentialité", content: "Contenu à venir." },
   agbPage: { title: "CGV", content: "Contenu à venir." },

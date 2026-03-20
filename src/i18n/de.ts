@@ -90,20 +90,20 @@ export const de = {
 			"Alle Preise beinhalten Sicherheitsausrüstung und professionelle Einweisung.",
 		categories: [
 			{
-				category: "Kinder",
-				age: "6–13 Jahre",
+				category: "S",
+				age: "ab 120 cm",
 				price: "19 €",
 				note: "Kinderparcours inkl.",
 			},
 			{
-				category: "Jugendliche",
-				age: "14–17 Jahre",
+				category: "M",
+				age: "bis 12 Jahre",
 				price: "25 €",
 				note: "Alle Parcours inkl.",
 			},
 			{
-				category: "Erwachsene",
-				age: "ab 18 Jahre",
+				category: "L",
+				age: "ab 12 Jahre",
 				price: "30 €",
 				note: "Alle Parcours inkl.",
 			},

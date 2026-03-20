@@ -92,20 +92,20 @@ export const fr: Translations = {
 			"Tous les tarifs incluent l'équipement de sécurité et l'instruction professionnelle.",
 		categories: [
 			{
-				category: "Enfants",
-				age: "6–13 ans",
+				category: "S",
+				age: "à partir de 120 cm",
 				price: "19 €",
 				note: "Parcours enfants inclus",
 			},
 			{
-				category: "Adolescents",
-				age: "14–17 ans",
+				category: "M",
+				age: "bis 12 ans",
 				price: "25 €",
 				note: "Tous parcours inclus",
 			},
 			{
-				category: "Adultes",
-				age: "à partir de 18 ans",
+				category: "L",
+				age: "à partir de 12 ans",
 				price: "30 €",
 				note: "Tous parcours inclus",
 			},

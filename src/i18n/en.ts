@@ -91,20 +91,20 @@ export const en: Translations = {
 			"All prices include safety equipment and professional instruction.",
 		categories: [
 			{
-				category: "Children",
-				age: "6–13 years",
+				category: "S",
+				age: "from 120 cm",
 				price: "€19",
 				note: "Children's course incl.",
 			},
 			{
-				category: "Teenagers",
-				age: "14–17 years",
+				category: "M",
+				age: "up to 12 years",
 				price: "€25",
 				note: "All courses incl.",
 			},
 			{
-				category: "Adults",
-				age: "18+ years",
+				category: "L",
+				age: "from 12 years",
 				price: "€30",
 				note: "All courses incl.",
 			},

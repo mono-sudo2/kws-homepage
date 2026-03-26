@@ -4,10 +4,6 @@ import { de } from "@/i18n";
 
 export const metadata: Metadata = buildMetadata(de.meta.jobs, "/jobs");
 
-export default function JobsLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function JobsLayout({ children }: { children: React.ReactNode }) {
   return children;
 }

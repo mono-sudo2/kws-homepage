@@ -1,8 +1,7 @@
 "use client";
 
+import Link from "next/link";
 import { useState, useCallback, useRef, useMemo } from "react";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import { Briefcase, Send, TreePine, Upload, X, Clock, Users, Heart, MapPin } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -17,7 +16,6 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { toast } from "sonner";
-import Link from "next/link";
 import preiseHeroBg from "@/assets/preise-hero-bg.jpg";
 
 const WavyBottom = ({ fill }: { fill: string }) => (
@@ -345,154 +343,150 @@ const Jobs = () => {
   const [selectedJob, setSelectedJob] = useState<JobListing | null>(null);
 
   return (
-    <div className="min-h-screen bg-background">
-      <Header />
-      <main>
-        {/* Hero */}
-        <section className="relative overflow-hidden py-24">
-          <img src={preiseHeroBg.src} alt="" className="absolute inset-0 w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-b from-forest-dark/70 to-primary/60" />
-          <WavyBottom fill="hsl(40 33% 96%)" />
-          <div className="container mx-auto px-4 text-center relative z-10">
-            <span className="inline-block bg-amber-light text-accent-foreground px-4 py-1.5 rounded-full text-sm font-bold mb-4">
-              Jobs
+    <>
+      {/* Hero */}
+      <section className="relative overflow-hidden py-24">
+        <img src={preiseHeroBg.src} alt="" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-b from-forest-dark/70 to-primary/60" />
+        <WavyBottom fill="hsl(40 33% 96%)" />
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <span className="inline-block bg-amber-light text-accent-foreground px-4 py-1.5 rounded-full text-sm font-bold mb-4">
+            Jobs
+          </span>
+          <h1 className="text-4xl sm:text-5xl text-primary-foreground mb-4">
+            Werde Teil unseres Teams!
+          </h1>
+          <p className="text-primary-foreground/80 max-w-2xl mx-auto text-lg">
+            Du liebst die Natur und arbeitest gerne mit Menschen? Dann bewirb dich jetzt beim Kletterwald Staufen!
+          </p>
+        </div>
+      </section>
+
+      {/* Arbeiten im Kletterwald */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <span className="inline-block bg-primary/10 text-primary px-4 py-1.5 rounded-full text-sm font-bold mb-4">
+              Über uns
             </span>
-            <h1 className="text-4xl sm:text-5xl text-primary-foreground mb-4">
-              Werde Teil unseres Teams!
-            </h1>
-            <p className="text-primary-foreground/80 max-w-2xl mx-auto text-lg">
-              Du liebst die Natur und arbeitest gerne mit Menschen? Dann bewirb dich jetzt beim Kletterwald Staufen!
+            <h2 className="text-3xl text-foreground mb-6">Arbeiten im Kletterwald</h2>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-4">
+              Seit 2010 ist der Kletterwald Staufen ein fester Bestandteil der Region – als einer der größten Kletterwälder in Südbaden
+              begrüßen wir jährlich tausende Besucher in unseren Baumwipfeln. Mit über 200 Kletter-Elementen bieten
+              wir Abenteuer für jedes Alter.
+            </p>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-4">
+              2026 starten wir mit einem neuen Partner und frischer Energie in die Zukunft – die perfekte Zeit,
+              um Teil unseres Teams zu werden! Ob als Klettertrainer hoch oben in den Bäumen, an der Kasse
+              mit direktem Gästekontakt oder im Marketing – bei uns erwartet dich ein familiäres Team,
+              abwechslungsreiche Aufgaben und ein Arbeitsplatz mitten in der Natur.
             </p>
           </div>
-        </section>
 
-        {/* Arbeiten im Kletterwald */}
-        <section className="py-16">
-          <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto text-center mb-12">
-              <span className="inline-block bg-primary/10 text-primary px-4 py-1.5 rounded-full text-sm font-bold mb-4">
-                Über uns
-              </span>
-              <h2 className="text-3xl text-foreground mb-6">Arbeiten im Kletterwald</h2>
-              <p className="text-muted-foreground text-lg leading-relaxed mb-4">
-                Seit 2010 ist der Kletterwald Staufen ein fester Bestandteil der Region – als größter Kletterpark in Südbaden
-                begrüßen wir jährlich über 100.000 Besucher in unseren Baumwipfeln. Mit über 200 Kletter-Elementen bieten
-                wir Abenteuer für jedes Alter.
-              </p>
-              <p className="text-muted-foreground text-lg leading-relaxed mb-4">
-                2026 starten wir mit einem neuen Partner und frischer Energie in die Zukunft – die perfekte Zeit,
-                um Teil unseres Teams zu werden! Ob als Klettertrainer hoch oben in den Bäumen, an der Kasse
-                mit direktem Gästekontakt oder im Marketing – bei uns erwartet dich ein familiäres Team,
-                abwechslungsreiche Aufgaben und ein Arbeitsplatz mitten in der Natur.
-              </p>
-            </div>
-
-            <div className="max-w-4xl mx-auto">
-              <h3 className="text-2xl text-foreground text-center mb-8">Was wir bieten</h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                {[
-                  { icon: TreePine, title: "Arbeit in der Natur", desc: "Dein Büro ist der Wald – frische Luft und Vogelgezwitscher inklusive." },
-                  { icon: Clock, title: "Flexible Zeiten", desc: "Saisonale Arbeitszeiten, ideal für Studierende oder als Nebenjob." },
-                  { icon: Heart, title: "Kostenlos klettern", desc: "Als Teammitglied kannst du unsere Parcours jederzeit kostenlos nutzen." },
-                  { icon: Users, title: "Tolles Team", desc: "Ein motiviertes, junges Team, das zusammenhält und Spaß an der Arbeit hat." },
-                ].map((benefit) => (
-                  <Card key={benefit.title} className="text-center hover:shadow-md transition-shadow">
-                    <CardContent className="pt-6">
-                      <div className="bg-primary/10 rounded-full p-3 w-fit mx-auto mb-3">
-                        <benefit.icon className="h-6 w-6 text-primary" />
-                      </div>
-                      <h4 className="font-semibold text-foreground mb-1">{benefit.title}</h4>
-                      <p className="text-sm text-muted-foreground">{benefit.desc}</p>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Offene Stellen */}
-        <section className="py-16 bg-muted/30">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <span className="inline-block bg-primary/10 text-primary px-4 py-1.5 rounded-full text-sm font-bold mb-4">
-                Stellenangebote
-              </span>
-              <h2 className="text-3xl text-foreground mb-3">Offene Stellen</h2>
-              <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-                Finde die passende Stelle und bewirb dich direkt – wir freuen uns auf deine Nachricht!
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-              {jobListings.map((job) => (
-                <Card key={job.id} className="flex flex-col hover:shadow-lg transition-shadow">
-                  <CardContent className="pt-6 flex flex-col flex-1">
-                    <div className="flex items-start justify-between gap-3 mb-3">
-                      <h3 className="text-lg font-bold text-foreground">{job.title}</h3>
-                      <Badge variant="secondary" className="shrink-0 text-xs">{job.type}</Badge>
+          <div className="max-w-4xl mx-auto">
+            <h3 className="text-2xl text-foreground text-center mb-8">Was wir bieten</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              {[
+                { icon: TreePine, title: "Arbeit in der Natur", desc: "Dein Büro ist der Wald – frische Luft und Vogelgezwitscher inklusive." },
+                { icon: Clock, title: "Flexible Zeiten", desc: "Saisonale Arbeitszeiten, ideal für Studierende oder als Nebenjob." },
+                { icon: Heart, title: "Kostenlos klettern", desc: "Als Teammitglied kannst du unsere Parcours jederzeit kostenlos nutzen." },
+                { icon: Users, title: "Tolles Team", desc: "Ein motiviertes, junges Team, das zusammenhält und Spaß an der Arbeit hat." },
+              ].map((benefit) => (
+                <Card key={benefit.title} className="text-center hover:shadow-md transition-shadow">
+                  <CardContent className="pt-6">
+                    <div className="bg-primary/10 rounded-full p-3 w-fit mx-auto mb-3">
+                      <benefit.icon className="h-6 w-6 text-primary" />
                     </div>
-                    <p className="text-muted-foreground text-sm mb-4">{job.description}</p>
-
-                    <div className="mb-3">
-                      <p className="text-sm font-semibold text-foreground mb-1.5">Deine Aufgaben</p>
-                      <ul className="space-y-1">
-                        {job.tasks.map((task) => (
-                          <li key={task} className="text-sm text-muted-foreground flex items-start gap-2">
-                            <span className="text-primary mt-1.5 shrink-0 h-1.5 w-1.5 rounded-full bg-primary" />
-                            {task}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-
-                    <div className="mb-5">
-                      <p className="text-sm font-semibold text-foreground mb-1.5">Was du mitbringst</p>
-                      <ul className="space-y-1">
-                        {job.requirements.map((req) => (
-                          <li key={req} className="text-sm text-muted-foreground flex items-start gap-2">
-                            <span className="text-primary mt-1.5 shrink-0 h-1.5 w-1.5 rounded-full bg-primary" />
-                            {req}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-
-                    <div className="mt-auto flex items-center justify-between pt-4 border-t">
-                      <span className="text-xs text-muted-foreground flex items-center gap-1">
-                        <MapPin className="h-3.5 w-3.5" /> Staufen im Breisgau
-                      </span>
-                      <Button
-                        onClick={() => setSelectedJob(job)}
-                        className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold"
-                      >
-                        <Send className="h-4 w-4 mr-2" />
-                        Jetzt bewerben
-                      </Button>
-                    </div>
+                    <h4 className="font-semibold text-foreground mb-1">{benefit.title}</h4>
+                    <p className="text-sm text-muted-foreground">{benefit.desc}</p>
                   </CardContent>
                 </Card>
               ))}
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* CTA */}
-        <section className="py-16">
-          <div className="container mx-auto px-4 text-center">
-            <div className="inline-flex items-center justify-center mb-4">
-              <div className="bg-primary/10 rounded-full p-3">
-                <TreePine className="h-8 w-8 text-primary" />
-              </div>
-            </div>
-            <h2 className="text-3xl text-foreground mb-4">Wir freuen uns auf dich!</h2>
-            <p className="text-muted-foreground mb-8 max-w-lg mx-auto">
-              Bei Fragen zur Bewerbung erreichst du uns jederzeit über unsere Kontaktseite.
+      {/* Offene Stellen */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <span className="inline-block bg-primary/10 text-primary px-4 py-1.5 rounded-full text-sm font-bold mb-4">
+              Stellenangebote
+            </span>
+            <h2 className="text-3xl text-foreground mb-3">Offene Stellen</h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              Finde die passende Stelle und bewirb dich direkt – wir freuen uns auf deine Nachricht!
             </p>
           </div>
-        </section>
-      </main>
-      <Footer />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            {jobListings.map((job) => (
+              <Card key={job.id} className="flex flex-col hover:shadow-lg transition-shadow">
+                <CardContent className="pt-6 flex flex-col flex-1">
+                  <div className="flex items-start justify-between gap-3 mb-3">
+                    <h3 className="text-lg font-bold text-foreground">{job.title}</h3>
+                    <Badge variant="secondary" className="shrink-0 text-xs">{job.type}</Badge>
+                  </div>
+                  <p className="text-muted-foreground text-sm mb-4">{job.description}</p>
+
+                  <div className="mb-3">
+                    <p className="text-sm font-semibold text-foreground mb-1.5">Deine Aufgaben</p>
+                    <ul className="space-y-1">
+                      {job.tasks.map((task) => (
+                        <li key={task} className="text-sm text-muted-foreground flex items-start gap-2">
+                          <span className="text-primary mt-1.5 shrink-0 h-1.5 w-1.5 rounded-full bg-primary" />
+                          {task}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div className="mb-5">
+                    <p className="text-sm font-semibold text-foreground mb-1.5">Was du mitbringst</p>
+                    <ul className="space-y-1">
+                      {job.requirements.map((req) => (
+                        <li key={req} className="text-sm text-muted-foreground flex items-start gap-2">
+                          <span className="text-primary mt-1.5 shrink-0 h-1.5 w-1.5 rounded-full bg-primary" />
+                          {req}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div className="mt-auto flex items-center justify-between pt-4 border-t">
+                    <span className="text-xs text-muted-foreground flex items-center gap-1">
+                      <MapPin className="h-3.5 w-3.5" /> Staufen im Breisgau
+                    </span>
+                    <Button
+                      onClick={() => setSelectedJob(job)}
+                      className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold"
+                    >
+                      <Send className="h-4 w-4 mr-2" />
+                      Jetzt bewerben
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-16">
+        <div className="container mx-auto px-4 text-center">
+          <div className="inline-flex items-center justify-center mb-4">
+            <div className="bg-primary/10 rounded-full p-3">
+              <TreePine className="h-8 w-8 text-primary" />
+            </div>
+          </div>
+          <h2 className="text-3xl text-foreground mb-4">Wir freuen uns auf dich!</h2>
+          <p className="text-muted-foreground mb-8 max-w-lg mx-auto">
+            Bei Fragen zur Bewerbung erreichst du uns jederzeit über unsere Kontaktseite.
+          </p>
+        </div>
+      </section>
 
       {/* Bewerbungs-Dialog */}
       {selectedJob && (
@@ -502,7 +496,7 @@ const Jobs = () => {
           onOpenChange={(open) => { if (!open) setSelectedJob(null); }}
         />
       )}
-    </div>
+    </>
   );
 };
 

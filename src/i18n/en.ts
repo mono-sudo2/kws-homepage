@@ -1,683 +1,430 @@
 import type { Translations } from "./de";
 
 export const en: Translations = {
-	header: {
-		nav: {
-			start: "Home",
-			preise: "Prices",
-			oeffnungszeiten: "Opening Hours",
-			ueberUns: "About Us",
-			kontakt: "Contact",
-			jobs: "Jobs",
-		},
-		cta: "Book now",
-	},
-	hero: {
-		title: "Welcome to Kletterwald Staufen",
-		subtitle: "Adventure in the Black Forest",
-		description:
-			"Experience adventures in the treetops! Climbing, swinging and zip-lining for the whole family – surrounded by nature.",
-		cta1: "Book now",
-		cta2: "Opening Hours",
-	},
-	erlebnis: {
-		badge: "Your Experience",
-		title: "Adventures in the Treetops",
-		description:
-			"Our high ropes course offers unforgettable experiences on multiple courses for children, families and adventurers. Pure action awaits you in the heart of the Black Forest!",
-		features: [
-			{
-				title: "Pure Nature",
-				description:
-					"Climb through the Black Forest – surrounded by ancient trees and fresh air.",
-			},
-			{
-				title: "Fun for Everyone",
-				description:
-					"From children's courses to the Base Jump – for every age and experience level.",
-			},
-			{
-				title: "Pure Adventure",
-				description:
-					"Zip lines, suspension bridges and climbing stations for real adrenaline kicks.",
-			},
-			{
-				title: "Maximum Safety",
-				description:
-					"State-of-the-art safety equipment and trained staff – so you can climb worry-free.",
-			},
-		],
-	},
-	parcours: {
-		badge: "Our Courses",
-		title: "Choose Your Adventure",
-		description: "From easy to extreme – find the course that suits you.",
-		difficulty: "Difficulty:",
-		items: [
-			{
-				name: "Children's Course",
-				duration: "approx. 45 min.",
-				minHeight: "from 120 cm",
-				description:
-					"The perfect start for little adventurers! Low height, lots of fun and child-friendly stations.",
-			},
-			{
-				name: "Beginners & Families",
-				duration: "approx. 1.5 hrs.",
-				minHeight: "from 140 cm",
-				description:
-					"Ideal for families and climbing beginners. Varied elements at moderate height.",
-			},
-			{
-				name: "Zip Lines & Free Jumps",
-				duration: "approx. 2 hrs.",
-				minHeight: "from 150 cm",
-				description:
-					"Fast zip lines and exciting free jumps – for those seeking thrills!",
-			},
-			{
-				name: "Base Jump / Jump & Fly",
-				duration: "approx. 2.5 hrs.",
-				minHeight: "from 160 cm",
-				description:
-					"The ultimate adrenaline rush! Jump from dizzying heights and fly through the treetops.",
-			},
-		],
-	},
-	preise: {
-		badge: "Prices",
-		title: "Fair Prices for Every Adventure",
-		description:
-			"All prices include safety equipment and professional instruction.",
-		categories: [
-			{
-				category: "S",
-				age: "from 120 cm",
-				price: "€19",
-				note: "Children's course incl.",
-			},
-			{
-				category: "M",
-				age: "up to 12 years",
-				price: "€25",
-				note: "All courses incl.",
-			},
-			{
-				category: "L",
-				age: "from 12 years",
-				price: "€30",
-				note: "All courses incl.",
-			},
-		],
-		hint: "💡 Advance reservation recommended. The safety briefing takes approx. 20 minutes and is included in the price. Children under 14 only accompanied by an adult.",
-		link: "View all prices & details →",
-		bestOffer: "Best Offer",
-	},
-	reservierung: {
-		badge: "Opening Hours",
-		title: "Our Opening Hours",
-		description:
-			"Opening hours vary by season. Check the calendar to see when we're open!",
-		seasons: {
-			hauptsaison: {
-				label: "Peak Season (May–Sep)",
-				time: "Tue–Fri 1–7pm / Sat-Sun 11am–7pm",
-			},
-			uebergang: {
-				label: "Shoulder Season (Apr & Oct)",
-				time: "Sat/Sun/Holidays 11am–6pm",
-			},
-			winterpause: { label: "Winter Break (Nov–Mar)", time: "Closed" },
-		},
-		link: "All opening hours & details",
-	},
-	events: {
-		badge: "Events & Groups",
-		title: "Climb Together, Experience Together",
-		description:
-			"Whether birthday party, team event or school trip – we have the right package for you!",
-		cta: "Reserve now",
-		items: [
-			{
-				title: "Birthday Parties",
-				description:
-					"Celebrate your birthday in the treetops! Including climbing adventure, reserved picnic area and a small surprise for the birthday child.",
-				features: [
-					"From 6 children",
-					"2.5 hrs climbing fun",
-					"Picnic area reserved",
-				],
-			},
-			{
-				title: "Team Events",
-				description:
-					"Strengthen your team with a shared adventure! Our team building courses promote trust, communication and collaboration.",
-				features: [
-					"From 10 persons",
-					"Individual planning",
-					"Wine-grower's snack",
-				],
-			},
-			{
-				title: "School Classes",
-				description:
-					"A trip nobody forgets! Special school rates and pedagogically guided programs for all ages.",
-				features: [
-					"Special rates (€23 p.p.)",
-					"From 20 persons",
-					"Pedagogical guidance",
-					"Bus line 23 direct",
-				],
-			},
-		],
-	},
-	faq: {
-		badge: "FAQ",
-		title: "Frequently Asked Questions",
-		description: "Everything you need to know before your visit",
-		items: [
-			{
-				question: "What is the minimum age for climbing?",
-				answer: "Children from 6 years and a minimum height of 120 cm may climb on our children's course. From 140 cm height, all courses are accessible. Children under 14 must be accompanied by an adult.",
-			},
-			{
-				question: "Do I need prior experience?",
-				answer: "No, you don't need any prior experience! Before starting, you'll receive an approx. 20-minute safety briefing from our trained team. After that, you're perfectly prepared for your climbing adventure.",
-			},
-			{
-				question: "What do I need to bring?",
-				answer: "Wear comfortable, sporty clothing and sturdy, closed shoes (no sandals or flip-flops). Long hair should be tied back. We provide all safety equipment.",
-			},
-			{
-				question: "How long does a visit take?",
-				answer: "Plan for approx. 2.5 to 3.5 hours – including the safety briefing (approx. 20 min.). There is no time limit on the courses, you can climb as long as you like!",
-			},
-			{
-				question: "Can I climb in the rain?",
-				answer: "Light rain is no problem – it makes the adventure even more exciting! In case of thunderstorms, strong winds or heavy rain, we close the park for safety reasons. Please check with us by phone beforehand.",
-			},
-			{
-				question: "Do I need to make a reservation?",
-				answer: "A reservation is not mandatory but is recommended – especially on weekends and holidays. This way we secure your spot and avoid waiting times.",
-			},
-		],
-	},
-	footer: {
-		kontakt: "Contact",
-		seiten: "Pages",
-		folgeUns: "Follow Us",
-		parking:
-			"🚗 Free parking right at the climbing forest. Public transport: S3 train line, stop 'Etzenbach'.",
-		copyright: "Kletterwald Staufen – Adventure since 2010",
-		copyrightYear: "© 2026 Kletterwald Staufen",
-		impressum: "Imprint",
-		datenschutz: "Privacy Policy",
-		agb: "Terms & Conditions",
-		oeffnungszeiten: "Opening Hours",
-		preise: "Prices",
-		ueberUns: "About Us",
-		kontaktLink: "Contact",
-		jobs: "Jobs",
-	},
-	preisePage: {
-		badge: "Prices & Tickets",
-		title: "Fair Prices for Every Adventure",
-		description:
-			"All prices include safety equipment, professional instruction and 3 hours of climbing time.",
-		cta: "Book now",
-		reserve: "Reserve now",
-		studentNote:
-			"* Students and apprentices climb at the youth rate (€25) – regardless of age. Please bring valid ID.",
-		extras: "Additional Offers",
-		extrasDescription:
-			"Even more adventure for frequent climbers and families",
-		bestChoice: "Best Choice",
-		extrasItems: [
-			{
-				title: "Family Card",
-				price: "€99",
-				description:
-					"2 adults + up to 3 children. Single visit, all courses included.",
-			},
-			{
-				title: "Season Pass",
-				price: "€149",
-				description:
-					"Unlimited access for the entire season (April–October). Valid for one person.",
-			},
-			{
-				title: "Treasure Hunt",
-				price: "€65",
-				description:
-					"Perfect for birthdays etc. Price plus admission tickets.",
-			},
-		],
-		included: "Included in Price",
-		includedItems: [
-			"Complete safety equipment",
-			"Approx. 20 min. safety briefing",
-			"3 hours climbing time",
-			"Supervision by trained staff",
-		],
-		faqTitle: "Frequently Asked Questions about Prices",
-		faqs: [
-			{
-				question: "What is included in the price?",
-				answer: "The admission price includes: safety equipment (climbing harness, helmet, gloves), professional safety briefing (approx. 20 min.) and unlimited access to the approved courses for the entire day.",
-			},
-			{
-				question: "Are there discounts?",
-				answer: "Yes! Group discount from 10 persons (€2 discount p.p.), season passes for frequent climbers and special family cards. Holders of the Black Forest Card receive 10% discount.",
-			},
-			{
-				question: "Can I pay on site?",
-				answer: "Yes, we accept cash, debit card and credit card. Online reservation requires no advance payment – payment is made on site.",
-			},
-			{
-				question: "Are there age or height restrictions?",
-				answer: "Children from 6 years and at least 120 cm height may use the children's course. From 140 cm, all courses are accessible. Children under 14 must be accompanied by an adult.",
-			},
-		],
-		ctaTitle: "Ready for Your Adventure?",
-		ctaDescription:
-			"Secure your spot at Kletterwald Staufen now – advance reservation recommended!",
-		categories: [
-			{
-				category: "Children",
-				age: "6–13 years",
-				price: "€19",
-				note: "Children's course incl.",
-				details:
-					"Access to children's course & beginner course. Children under 14 only accompanied by an adult.",
-			},
-			{
-				category: "Teenagers",
-				age: "14–17 years",
-				price: "€25",
-				note: "All courses incl.",
-				details:
-					"Access to all courses. Teenagers from 14 may climb without accompaniment (with parental consent form).",
-			},
-			{
-				category: "Adults*",
-				age: "18+ years",
-				price: "€30",
-				note: "All courses incl.",
-				details:
-					"Unrestricted access to all courses incl. Base Jump & zip lines. No time limit.",
-			},
-		],
-	},
-	oeffnungszeitenPage: {
-		badge: "Opening Hours",
-		title: "When Can You Climb?",
-		description: "Our opening hours vary by season. Plan your visit here.",
-		seasons: {
-			hauptsaison: {
-				label: "Peak Season (May–Sep)",
-				time: "Tue–Fri 1–7pm / Sat-Sun 11am–7pm",
-			},
-			uebergang: {
-				label: "Shoulder Season (Apr & Oct)",
-				time: "Sat/Sun/Holidays 11am–6pm",
-			},
-			winterpause: { label: "Winter Break (Nov–Mar)", time: "Closed" },
-		},
-		seasonDetails: [
-			{
-				name: "Peak Season (May–Sep)",
-				hours: [
-					{ days: "Monday", time: "Closed (rest day)" },
-					{ days: "Tuesday – Friday", time: "1:00 PM – 7:00 PM" },
-					{
-						days: "Saturday, Sunday & Holidays",
-						time: "11:00 AM – 7:00 PM",
-					},
-				],
-				note: "Last admission: 2 hours before closing",
-			},
-			{
-				name: "Shoulder Season (Apr & Oct)",
-				hours: [
-					{ days: "Monday – Friday", time: "Closed" },
-					{
-						days: "Saturday, Sunday & Holidays",
-						time: "11:00 AM – 6:00 PM",
-					},
-				],
-				note: "Last admission: 2 hours before closing",
-			},
-			{
-				name: "Winter Break (Nov–Mar)",
-				hours: [],
-				note: "The climbing forest is closed during winter break. Group events available on request.",
-			},
-		],
-		holidays: "Public Holidays",
-		holidaysDescription:
-			"Regulations on public holidays in Baden-Württemberg",
-		holidayItems: [
-			{
-				name: "Easter Monday",
-				date: "04/06/2026",
-				status: "Open (peak season hours)",
-			},
-			{
-				name: "May Day",
-				date: "05/01/2026",
-				status: "Open (peak season hours)",
-			},
-			{
-				name: "Ascension Day",
-				date: "05/14/2026",
-				status: "Open (peak season hours)",
-			},
-			{
-				name: "Whit Monday",
-				date: "05/25/2026",
-				status: "Open (peak season hours)",
-			},
-			{
-				name: "German Unity Day",
-				date: "10/03/2026",
-				status: "Open (peak season hours)",
-			},
-			{ name: "All Saints' Day", date: "11/01/2026", status: "Closed" },
-			{
-				name: "Christmas Eve & Christmas",
-				date: "12/24–26/2026",
-				status: "Closed (winter break)",
-			},
-			{
-				name: "New Year's Eve & New Year",
-				date: "12/31–01/01",
-				status: "Closed (winter break)",
-			},
-		],
-		goodToKnow: "Good to Know",
-		weather: {
-			title: "Weather",
-			description:
-				"We're open in light rain – that's part of the adventure! In case of thunderstorms, strong winds or heavy rain, we close for safety reasons. Current info on our social media channels.",
-		},
-		parking: {
-			title: "Getting Here & Parking",
-			description:
-				"Free parking right at the climbing forest. Address: Etzenbach 1, 79219 Staufen im Breisgau. Easily accessible via the B31.",
-		},
-		publicTransport: {
-			title: "Public Transport",
-			description:
-				"S3 train line, stop 'Etzenbach'. About 10 minutes from Staufen train station. Timetables at VAG Freiburg.",
-		},
-		ctaTitle: "Plan Your Visit",
-		ctaDescription:
-			"Reserve in advance and secure your spot – especially recommended on weekends and holidays!",
-		ctaBook: "Book now",
-		ctaPrices: "View prices",
-	},
-	ueberUnsPage: {
-		badge: "About Us",
-		title: "Who We Are",
-		description:
-			"For over 15 years, we've been building the largest climbing park in southern Baden – with passion, safety and lots of nature.",
-		historyTitle: "Our History",
-		historySubtitle:
-			"From 3 courses to the largest facility in southern Baden",
-		milestones: [
-			{
-				year: "2009",
-				title: "Foundation",
-				description:
-					"Opening with 3 courses and a big vision – climbing fun for everyone in the heart of the Black Forest.",
-			},
-			{
-				year: "2013",
-				title: "Expansion",
-				description:
-					"New courses for children and families. The climbing forest becomes a destination for the entire region.",
-			},
-			{
-				year: "2017",
-				title: "Growth",
-				description:
-					"10+ courses and over 100,000 visitors. Kletterwald Staufen becomes the largest park in southern Baden.",
-			},
-			{
-				year: "2021",
-				title: "Innovation",
-				description:
-					"Introduction of state-of-the-art safety systems and new formats like night climbing and team building events.",
-			},
-			{
-				year: "2024",
-				title: "Milestone",
-				description:
-					"Largest climbing park in southern Baden with 15+ courses, 200+ climbing elements and over 100,000 visitors annually.",
-			},
-			{
-				year: "2026",
-				title: "Grand Reopening",
-				description:
-					"With a new partner and a young managing director full of ideas, Kletterwald Staufen starts a new era – fresh energy, big plans and lots of climbing fun.",
-			},
-		],
-		valuesTitle: "What We Stand For",
-		valuesSubtitle: "Our values guide everything we do",
-		values: [
-			{
-				title: "Safety",
-				description:
-					"State-of-the-art safety systems and regularly trained staff – so you can fully focus on climbing.",
-			},
-			{
-				title: "Nature",
-				description:
-					"Sustainable forest management. All trees are preserved and regularly inspected by tree surgeons.",
-			},
-			{
-				title: "Community",
-				description:
-					"A place for families, friends and teams. Shared experiences create lasting memories.",
-			},
-			{
-				title: "Adventure",
-				description:
-					"Challenges for every level – from beginner to pro. Everyone finds their course.",
-			},
-		],
-		statsTitle: "Facts & Figures",
-		stats: [
-			{ value: "15+", label: "Years of Experience" },
-			{ value: "100,000+", label: "Visitors" },
-			{ value: "200+", label: "Climbing Elements" },
-		],
-		ctaTitle: "Experience It Yourself!",
-		ctaDescription:
-			"Come and see our climbing forest for yourself – we look forward to your visit!",
-		ctaButton: "Book now",
-	},
-	kontaktPage: {
-		badge: "Contact",
-		title: "Contact Us",
-		description:
-			"Do you have questions or would you like to plan a group event? We look forward to hearing from you!",
-		formTitle: "Send Us a Message",
-		contactTitle: "Contact Information",
-		name: "Name",
-		namePlaceholder: "Your name",
-		email: "Email",
-		emailPlaceholder: "your@email.com",
-		subject: "Subject",
-		subjectPlaceholder: "What is it about?",
-		message: "Message",
-		messagePlaceholder: "Your message to us...",
-		send: "Send message",
-		successTitle: "Message sent!",
-		successDescription:
-			"Thank you for your message. We will get back to you as soon as possible.",
-		contactInfo: [
-			{
-				label: "Address",
-				value: "Etzenbach 1, 79219 Staufen im Breisgau",
-			},
-			{ label: "Phone", value: "+49 (0) 174 910 6186" },
-			{ label: "Email", value: "info@kletterwald-staufen.de" },
-			{
-				label: "Public Transport",
-				value: "Stop Etzenbach, S3 train line",
-			},
-		],
-		mapTitle: "Location Kletterwald Staufen",
-		captchaLabel: "Security question:",
-		captchaPlaceholder: "Your answer",
-		privacyText: "I have read the",
-		privacyLink: "Privacy Policy",
-		privacyEnd: "and agree to the processing of my data.",
-		wrongAnswer: "Wrong answer, please try again",
-		acceptPrivacy: "You must accept the privacy policy",
-		ctaTitle: "Get Started",
-		ctaDescription:
-			"Book your climbing adventure now – we look forward to your visit!",
-		ctaButton: "Book now",
-	},
-	jobsPage: {
-		badge: "Jobs",
-		title: "Join Our Team!",
-		description:
-			"You love nature and enjoy working with people? Then apply now at Kletterwald Staufen!",
-		aboutBadge: "About Us",
-		aboutTitle: "Working at the Climbing Forest",
-		aboutText1:
-			"Since 2010, Kletterwald Staufen has been an integral part of the region – as the largest climbing park in southern Baden, we welcome over 100,000 visitors annually to our treetops. With over 200 climbing elements, we offer adventure for every age.",
-		aboutText2:
-			"In 2026, we're starting a new chapter with a new partner and fresh energy – the perfect time to join our team! Whether as a climbing instructor high up in the trees, at the ticket counter with direct guest contact, or in marketing – you can expect a family-like team, varied tasks and a workplace in the heart of nature.",
-		benefitsTitle: "What We Offer",
-		benefits: [
-			{
-				title: "Work in Nature",
-				desc: "Your office is the forest – fresh air and birdsong included.",
-			},
-			{
-				title: "Flexible Hours",
-				desc: "Seasonal working hours, ideal for students or as a side job.",
-			},
-			{
-				title: "Free Climbing",
-				desc: "As a team member, you can use our courses for free anytime.",
-			},
-			{
-				title: "Great Team",
-				desc: "A motivated, young team that sticks together and enjoys their work.",
-			},
-		],
-		formTitle: "Application Form",
-		firstName: "First Name",
-		lastName: "Last Name",
-		email: "Email",
-		phone: "Phone (optional)",
-		position: "Desired Position / Area",
-		positionPlaceholder: "Please select...",
-		positions: [
-			"Climbing Instructor",
-			"Ticket Counter",
-			"Marketing",
-			"Internship",
-		],
-		motivation: "Brief Motivation",
-		motivationPlaceholder:
-			"Tell us briefly why you'd like to work with us…",
-		filesLabel: "Upload files (optional)",
-		filesDragText: "Drag files here or",
-		filesBrowse: "browse",
-		filesMax: "Max. 10 MB total",
-		filesCount: "files",
-		fileCount: "file",
-		captchaLabel: "Security question:",
-		captchaPlaceholder: "Your answer",
-		privacyText: "I have read the",
-		privacyLink: "Privacy Policy",
-		privacyEnd: "and agree to the processing of my data.",
-		submit: "Submit application",
-		successTitle: "Application sent!",
-		successDescription:
-			"Thank you for your interest. We will get back to you as soon as possible.",
-		ctaTitle: "We Look Forward to Hearing From You!",
-		ctaDescription:
-			"For questions about the application, you can reach us anytime via our contact page.",
-		validation: {
-			minChars: "At least 2 characters",
-			maxChars50: "Maximum 50 characters",
-			maxChars100: "Maximum 100 characters",
-			maxChars1000: "Maximum 1000 characters",
-			validEmail: "Please enter a valid email address",
-			selectPosition: "Please select a position",
-			minMotivation: "At least 10 characters",
-			solveCaptcha: "Please solve the math problem",
-			wrongAnswer: "Wrong answer, please try again",
-			acceptPrivacy: "You must accept the privacy policy",
-			fileTooLarge: "exceeds the 10 MB limit",
-		},
-	},
-	meta: {
-		home: {
-			title: "Kletterwald Staufen – Adventure in the Black Forest",
-			description:
-				"Experience climbing adventures at the largest climbing park in southern Baden. 15+ courses, 200+ climbing elements – fun for the whole family in the Black Forest.",
-		},
-		impressum: {
-			title: "Imprint · Kletterwald Staufen",
-			description:
-				"Imprint of Kletterwald Staufen – Information according to § 5 TMG.",
-		},
-		ueberUns: {
-			title: "About Us · Kletterwald Staufen",
-			description:
-				"Learn more about Kletterwald Staufen – the largest climbing park in southern Baden for over 15 years, with passion, safety and nature.",
-		},
-		kontakt: {
-			title: "Contact · Kletterwald Staufen",
-			description:
-				"Contact Kletterwald Staufen for questions, reservations and group inquiries. We're happy to help.",
-		},
-		preise: {
-			title: "Prices & Tickets · Kletterwald Staufen",
-			description:
-				"Fair prices for children, teenagers and adults at Kletterwald Staufen. Secure your tickets and experience climbing adventures.",
-		},
-		oeffnungszeiten: {
-			title: "Opening Hours · Kletterwald Staufen",
-			description:
-				"Current opening hours of Kletterwald Staufen. Season, holidays and special opening hours at a glance.",
-		},
-		jobs: {
-			title: "Jobs · Kletterwald Staufen",
-			description:
-				"Open positions at Kletterwald Staufen. Join our team and work in the nature of the Black Forest.",
-		},
-		datenschutz: {
-			title: "Privacy Policy · Kletterwald Staufen",
-			description:
-				"Privacy policy of Kletterwald Staufen – Information on how we handle your data.",
-		},
-		agb: {
-			title: "Terms & Conditions · Kletterwald Staufen",
-			description: "Terms and conditions of Kletterwald Staufen.",
-		},
-		notFound: {
-			title: "Page not found · Kletterwald Staufen",
-			description: "The requested page could not be found.",
-		},
-	},
-	impressumPage: { title: "Imprint", content: "Content coming soon." },
-	datenschutzPage: {
-		title: "Privacy Policy",
-		content: "Content coming soon.",
-	},
-	agbPage: { title: "Terms & Conditions", content: "Content coming soon." },
-	notFound: {
-		title: "404",
-		message: "Page not found",
-		link: "Return to Home",
-	},
+  header: {
+    nav: {
+      start: "Home",
+      preise: "Prices",
+      oeffnungszeiten: "Opening Hours",
+      ueberUns: "About Us",
+      kontakt: "Contact",
+      jobs: "Jobs",
+      abenteuer: "Adventure",
+    },
+    cta: "Book now",
+  },
+  meta: {
+    home: {
+      title: "Kletterwald Staufen – Adventure in the Black Forest",
+      description:
+        "Climbing adventures in the largest climbing park in South Baden. 15+ courses, 200+ climbing elements – fun for the whole family in the Black Forest.",
+    },
+    impressum: {
+      title: "Legal notice · Kletterwald Staufen",
+      description: "Legal notice for Kletterwald Staufen – information in accordance with German law.",
+    },
+    datenschutz: {
+      title: "Privacy · Kletterwald Staufen",
+      description: "Privacy policy for Kletterwald Staufen – how we handle your data.",
+    },
+    agb: {
+      title: "Terms · Kletterwald Staufen",
+      description: "General terms and conditions of Kletterwald Staufen.",
+    },
+    oeffnungszeiten: {
+      title: "Opening hours · Kletterwald Staufen",
+      description: "Current opening hours at Kletterwald Staufen – seasons, holidays and special hours at a glance.",
+    },
+    ueberUns: {
+      title: "About us · Kletterwald Staufen",
+      description:
+        "Learn more about Kletterwald Staufen – for over 15 years the largest climbing park in South Baden with passion, safety and nature.",
+    },
+    kontakt: {
+      title: "Contact · Kletterwald Staufen",
+      description: "Contact Kletterwald Staufen for questions, bookings and group requests. We are happy to help.",
+    },
+    jobs: {
+      title: "Jobs · Kletterwald Staufen",
+      description: "Open positions at Kletterwald Staufen. Join our team and work in the Black Forest.",
+    },
+    preise: {
+      title: "Prices & tickets · Kletterwald Staufen",
+      description: "Fair prices for children, teens and adults at Kletterwald Staufen. Book tickets and enjoy climbing adventures.",
+    },
+    abenteuer: {
+      title: "Adventure · Kletterwald Staufen",
+      description:
+        "Courses, attractions and treasure hunt at Kletterwald Staufen – adventure for the whole family in the Black Forest.",
+    },
+    notFound: {
+      title: "Page not found · Kletterwald Staufen",
+      description: "The page you are looking for could not be found.",
+    },
+  },
+  hero: {
+    title: "Welcome to Kletterwald Staufen",
+    subtitle: "Adventure in the Black Forest",
+    description: "Experience adventures in the treetops! Climbing, swinging and zip-lining for the whole family – surrounded by nature.",
+    cta1: "Book now",
+    cta2: "Opening Hours",
+  },
+  erlebnis: {
+    badge: "Your Experience",
+    title: "Adventures in the Treetops",
+    description: "Our high ropes course offers unforgettable experiences on multiple courses for children, families and adventurers. Pure action awaits you in the heart of the Black Forest!",
+    features: [
+      { title: "Pure Nature", description: "Climb through the Black Forest – surrounded by ancient trees and fresh air." },
+      { title: "Fun for Everyone", description: "From children's courses to the Base Jump – for every age and experience level." },
+      { title: "Pure Adventure", description: "Zip lines, suspension bridges and climbing stations for real adrenaline kicks." },
+      { title: "Maximum Safety", description: "State-of-the-art safety equipment and trained staff – so you can climb worry-free." },
+    ],
+  },
+  parcours: {
+    badge: "Our Courses",
+    title: "Choose Your Adventure",
+    description: "From easy to extreme – find the course that suits you.",
+    difficulty: "Difficulty:",
+    attractionsTitle: "Attractions",
+    attractionsDescription: "Even more action for adrenaline junkies!",
+    minAge: "from 12 years",
+    items: [
+      { name: "Children's Course", minHeight: "120–140 cm", description: "The perfect start for little adventurers! Low height, lots of fun and child-friendly stations.", badge: "", courses: [{ name: "K1", color: "yellow" }, { name: "K2", color: "yellow" }, { name: "MiDi", color: "yellow-blue" }] },
+      { name: "Zip Lines", minHeight: "from 140 cm", description: "Fast zip lines through the forest – for those seeking thrills!", badge: "", courses: [{ name: "S1", color: "green" }, { name: "S2", color: "green" }] },
+      { name: "Beginner Course", minHeight: "from 140 cm", description: "Ideal for families and climbing beginners. Varied elements at moderate height.", badge: "", courses: [{ name: "A1", color: "blue" }, { name: "A2", color: "blue" }, { name: "A3", color: "blue" }, { name: "A4", color: "blue" }] },
+      { name: "Advanced Course", minHeight: "from 140 cm", description: "Challenging stations for experienced climbers. This is where it gets really demanding!", badge: "", courses: [{ name: "B1", color: "red" }, { name: "B2", color: "red" }, { name: "B3", color: "red" }] },
+    ],
+    attractions: [
+      { name: "Base Jump", minHeight: "from 140 cm", description: "Jump from dizzying heights – the ultimate adrenaline rush!" },
+      { name: "Jump & Fly", minHeight: "from 140 cm", description: "Fly through the treetops – secured by rope for maximum fun!" },
+    ],
+  },
+  preise: {
+    badge: "Prices",
+    title: "Fair Prices for Every Adventure",
+    description: "All prices include safety equipment and professional instruction.",
+    categories: [
+      { category: "S", height: "120–140 cm", ageReq: "under 12 years", price: "€19", note: "Children's course" },
+      { category: "M", height: "from 140 cm", ageReq: "under 12 years", price: "€25", note: "All courses incl." },
+      { category: "L", height: "from 140 cm", ageReq: "from 12 years", price: "€30", note: "All courses incl." },
+    ],
+    hint: "💡 Advance reservation recommended. The safety briefing takes approx. 30 minutes and is included in the price. Children under 12 only accompanied by an adult.",
+    link: "View all prices & details →",
+    bestOffer: "Best Offer",
+  },
+  reservierung: {
+    badge: "Opening Hours",
+    title: "Our Opening Hours",
+    description: "Opening hours vary by season and weather. Check the calendar to see when we're open!",
+    seasons: {
+      hauptsaison: { label: "Peak Season (May–Sep)", time: "Tue–Fri 1–7pm / Sat-Sun 11am–7pm" },
+      uebergang: { label: "Shoulder Season (Apr & Oct)", time: "Sat/Sun/Holidays 11am–6pm" },
+      winterpause: { label: "Winter Break (Nov–Mar)", time: "Closed" },
+    },
+    link: "All opening hours & details",
+  },
+  events: {
+    badge: "Events & Groups",
+    title: "Climb Together, Experience Together",
+    description: "Whether birthday party, team event or school trip – we have the right package for you!",
+    cta: "Reserve now",
+    items: [
+      { title: "Birthday Parties", description: "Celebrate your birthday in the treetops! Including climbing adventure, reserved picnic area and a small surprise for the birthday child.", features: ["From 6 children", "2.5 hrs climbing fun", "Picnic area reserved"] },
+      { title: "Team Events", description: "Strengthen your team with a shared adventure! Our team building courses promote trust, communication and collaboration.", features: ["From 10 persons", "Individual planning", "Wine-grower's snack"] },
+      { title: "School Classes", description: "A trip nobody forgets! Special school rates and pedagogically guided programs for all ages.", features: ["Special rates (€23 p.p.)", "From 20 persons", "Pedagogical guidance", "Train line S3 direct"] },
+    ],
+  },
+  faq: {
+    badge: "FAQ",
+    title: "Frequently Asked Questions",
+    description: "Everything you need to know before your visit",
+    items: [
+      { question: "What is the minimum age for climbing?", answer: "Children from 6 years and a minimum height of 120 cm may climb on our children's course. From 140 cm height, all courses are accessible. Children under 12 must be accompanied by an adult." },
+      { question: "Do I need prior experience?", answer: "No, you don't need any prior experience! Before starting, you'll receive an approx. 30-minute safety briefing from our trained team. After that, you're perfectly prepared for your climbing adventure." },
+      { question: "What do I need to bring?", answer: "Wear comfortable, sporty clothing and sturdy, closed shoes (no sandals or flip-flops). Long hair should be tied back. We provide all safety equipment." },
+      { question: "How long does a visit take?", answer: "Your entry ticket is valid for 3 hours – including approx. 30 min. safety briefing. Afterwards, you're very welcome to stay in the forest area, have a picnic and enjoy nature." },
+      { question: "Can I climb in the rain?", answer: "Light rain is no problem – it makes the adventure even more exciting! In case of thunderstorms, strong winds or heavy rain, we close the park for safety reasons. Please check with us by phone beforehand." },
+      { question: "Do I need to make a reservation?", answer: "A reservation is not mandatory but is recommended – especially on weekends and holidays. This way we secure your spot and avoid waiting times." },
+    ],
+  },
+  footer: {
+    kontakt: "Contact",
+    seiten: "Pages",
+    folgeUns: "Follow Us",
+    parking: "🚗 Free parking right at the climbing forest. Public transport: S3 train line, stop 'Etzenbach'.",
+    copyright: "Kletterwald Staufen – Adventure since 2010",
+    copyrightYear: "© 2026 Kletterwald Staufen",
+    impressum: "Imprint",
+    datenschutz: "Privacy Policy",
+    agb: "Terms & Conditions",
+    oeffnungszeiten: "Opening Hours",
+    preise: "Prices",
+    ueberUns: "About Us",
+    kontaktLink: "Contact",
+    jobs: "Jobs",
+    einverstaendnis: "Consent Form (PDF)",
+  },
+  preisePage: {
+    badge: "Prices & Tickets",
+    title: "Fair Prices for Every Adventure",
+    description: "All prices include safety equipment, professional instruction and 3 hours of climbing time.",
+    cta: "Book now",
+    reserve: "Reserve now",
+    studentNote: "* Students and apprentices climb at the youth rate (€25) – regardless of age. Please bring valid ID.",
+    extras: "Additional Offers",
+    extrasDescription: "Even more adventure for frequent climbers and families",
+    bestChoice: "Best Choice",
+    extrasItems: [
+      { title: "Family Card", price: "€99", description: "2 adults + up to 3 children. Single visit, all courses included." },
+      { title: "Season Pass", price: "€149", description: "Unlimited access for the entire season (April–October). Valid for one person." },
+      { title: "Treasure Hunt", price: "€65", description: "Perfect for birthdays etc. Price plus admission tickets." },
+    ],
+    included: "Included in Price",
+    includedItems: [
+      "Complete safety equipment",
+      "Approx. 30 min. safety briefing",
+      "3 hours climbing time",
+      "Supervision by trained staff",
+    ],
+    faqTitle: "Frequently Asked Questions about Prices",
+    faqs: [
+      { question: "What is included in the price?", answer: "The admission price includes: safety equipment (climbing harness, helmet, gloves), safety briefing (approx. 30 min.) and access to the approved courses." },
+      { question: "Are there discounts?", answer: "Yes! Group discount from 20 persons (€2 discount p.p.), season passes for frequent climbers and special family cards. Holders of the Black Forest Card receive 10% discount." },
+      { question: "Can I pay on site?", answer: "Yes, we accept cash, debit card and credit card. Online reservation requires no advance payment – payment is made on site." },
+      { question: "Are there age or height restrictions?", answer: "Children from 6 years and at least 120 cm height may use the children's course. From 140 cm, all courses are accessible. Children under 12 must be accompanied by an adult." },
+    ],
+    ctaTitle: "Ready for Your Adventure?",
+    ctaDescription: "Secure your spot at Kletterwald Staufen now – advance reservation recommended!",
+    categories: [
+      { category: "S", height: "120–140 cm", ageReq: "under 12 years", price: "€19", note: "Children's course", details: "Access to children's course. Children under 12 only accompanied by an adult." },
+      { category: "M", height: "from 140 cm", ageReq: "under 12 years", price: "€25", note: "All courses incl.", details: "Access to all courses. Children under 12 only accompanied by an adult." },
+      { category: "L", height: "from 140 cm", ageReq: "from 12 years", price: "€30", note: "All courses incl.", details: "Unrestricted access to all courses incl. Base Jump & zip lines." },
+    ],
+  },
+  oeffnungszeitenPage: {
+    badge: "Opening Hours",
+    title: "When Can You Climb?",
+    description: "Our opening hours vary by season. Plan your visit here.",
+    seasons: {
+      hauptsaison: { label: "Peak Season (May–Sep)", time: "Tue–Fri 1–7pm / Sat-Sun 11am–7pm" },
+      uebergang: { label: "Shoulder Season (Apr & Oct)", time: "Sat/Sun/Holidays 11am–6pm" },
+      winterpause: { label: "Winter Break (Nov–Mar)", time: "Closed" },
+    },
+    seasonDetails: [
+      {
+        name: "Peak Season (May–Sep)",
+        hours: [
+          { days: "Monday", time: "Closed (rest day)" },
+          { days: "Tuesday – Friday", time: "1:00 PM – 7:00 PM" },
+          { days: "Saturday, Sunday & Holidays", time: "11:00 AM – 7:00 PM" },
+        ],
+        note: "Last admission: 2 hours before closing",
+      },
+      {
+        name: "Shoulder Season (Apr & Oct)",
+        hours: [
+          { days: "Monday – Friday", time: "Closed" },
+          { days: "Saturday, Sunday & Holidays", time: "11:00 AM – 6:00 PM" },
+        ],
+        note: "Last admission: 2 hours before closing",
+      },
+      {
+        name: "Winter Break (Nov–Mar)",
+        hours: [],
+        note: "The climbing forest is closed during winter break. Group events available on request.",
+      },
+    ],
+    holidays: "Public Holidays",
+    holidaysDescription: "Regulations on public holidays in Baden-Württemberg",
+    holidayItems: [
+      { name: "Easter Monday", date: "04/06/2026", status: "Open (peak season hours)" },
+      { name: "May Day", date: "05/01/2026", status: "Open (peak season hours)" },
+      { name: "Ascension Day", date: "05/14/2026", status: "Open (peak season hours)" },
+      { name: "Whit Monday", date: "05/25/2026", status: "Open (peak season hours)" },
+      { name: "German Unity Day", date: "10/03/2026", status: "Open (peak season hours)" },
+      { name: "All Saints' Day", date: "11/01/2026", status: "Closed" },
+      { name: "Christmas Eve & Christmas", date: "12/24–26/2026", status: "Closed (winter break)" },
+      { name: "New Year's Eve & New Year", date: "12/31–01/01", status: "Closed (winter break)" },
+    ],
+    goodToKnow: "Good to Know",
+    weather: { title: "Weather", description: "We're open in light rain – that's part of the adventure! In case of thunderstorms, strong winds or heavy rain, we close for safety reasons. Current info on our social media channels." },
+    parking: { title: "Getting Here & Parking", description: "Free parking right at the climbing forest. Address: Waldweg 12, 79219 Staufen im Breisgau. Easily accessible via the B31." },
+    publicTransport: { title: "Public Transport", description: "S3 train line, stop 'Etzenbach'. About 10 minutes from Staufen train station. Timetables at VAG Freiburg." },
+    ctaTitle: "Plan Your Visit",
+    ctaDescription: "Reserve in advance and secure your spot – especially recommended on weekends and holidays!",
+    ctaBook: "Book now",
+    ctaPrices: "View prices",
+  },
+  ueberUnsPage: {
+    badge: "About Us",
+    title: "Who We Are",
+    description: "For over 15 years, we've been building the largest climbing park in southern Baden – with passion, safety and lots of nature.",
+    historyTitle: "Our History",
+    historySubtitle: "From 3 courses to the largest facility in southern Baden",
+    milestones: [
+      { year: "2009", title: "Foundation", description: "Opening with 3 courses and a big vision – climbing fun for everyone in the heart of the Black Forest." },
+      { year: "2013", title: "Expansion", description: "New courses for children and families. The climbing forest becomes a destination for the entire region." },
+      { year: "2017", title: "Growth", description: "10+ courses and over 100,000 visitors. Kletterwald Staufen becomes the largest park in southern Baden." },
+      { year: "2021", title: "Innovation", description: "Introduction of state-of-the-art safety systems and new formats like night climbing and team building events." },
+      { year: "2024", title: "Milestone", description: "Largest climbing park in southern Baden with 15+ courses, 200+ climbing elements and over 100,000 visitors annually." },
+      { year: "2026", title: "Grand Reopening", description: "With a new partner and a young managing director full of ideas, Kletterwald Staufen starts a new era – fresh energy, big plans and lots of climbing fun." },
+    ],
+    valuesTitle: "What We Stand For",
+    valuesSubtitle: "Our values guide everything we do",
+    values: [
+      { title: "Safety", description: "State-of-the-art safety systems and regularly trained staff – so you can fully focus on climbing." },
+      { title: "Nature", description: "Sustainable forest management. All trees are preserved and regularly inspected by tree surgeons." },
+      { title: "Community", description: "A place for families, friends and teams. Shared experiences create lasting memories." },
+      { title: "Adventure", description: "Challenges for every level – from beginner to pro. Everyone finds their course." },
+    ],
+    statsTitle: "Facts & Figures",
+    stats: [
+      { value: "15+", label: "Years of Experience" },
+      { value: "100,000+", label: "Visitors" },
+      { value: "200+", label: "Climbing Elements" },
+    ],
+    ctaTitle: "Experience It Yourself!",
+    ctaDescription: "Come and see our climbing forest for yourself – we look forward to your visit!",
+    ctaButton: "Book now",
+  },
+  kontaktPage: {
+    badge: "Contact",
+    title: "Contact Us",
+    description: "Do you have questions or would you like to plan a group event? We look forward to hearing from you!",
+    formTitle: "Send Us a Message",
+    contactTitle: "Contact Information",
+    name: "Name",
+    namePlaceholder: "Your name",
+    email: "Email",
+    emailPlaceholder: "your@email.com",
+    subject: "Subject",
+    subjectPlaceholder: "What is it about?",
+    message: "Message",
+    messagePlaceholder: "Your message to us...",
+    send: "Send message",
+    successTitle: "Message sent!",
+    successDescription: "Thank you for your message. We will get back to you as soon as possible.",
+    contactInfo: [
+      { label: "Address", value: "Etzenbach 1, 79219 Staufen im Breisgau" },
+      { label: "Phone", value: "+49 (0)7633 123 456" },
+      { label: "Email", value: "info@kletterwald-staufen.de" },
+      { label: "Public Transport", value: "Stop Etzenbach, S3 train line" },
+    ],
+    mapTitle: "Location Kletterwald Staufen",
+    captchaLabel: "Security question:",
+    captchaPlaceholder: "Your answer",
+    privacyText: "I have read the",
+    privacyLink: "Privacy Policy",
+    privacyEnd: "and agree to the processing of my data.",
+    wrongAnswer: "Wrong answer, please try again",
+    acceptPrivacy: "You must accept the privacy policy",
+    ctaTitle: "Get Started",
+    ctaDescription: "Book your climbing adventure now – we look forward to your visit!",
+    ctaButton: "Book now",
+  },
+  jobsPage: {
+    badge: "Jobs",
+    title: "Join Our Team!",
+    description: "You love nature and enjoy working with people? Then apply now at Kletterwald Staufen!",
+    aboutBadge: "About Us",
+    aboutTitle: "Working at the Climbing Forest",
+    aboutText1: "Since 2010, Kletterwald Staufen has been an integral part of the region – as one of the largest climbing forests in southern Baden, we welcome thousands of visitors annually to our treetops. With over 200 climbing elements, we offer adventure for every age.",
+    aboutText2: "In 2026, we're starting a new chapter with a new partner and fresh energy – the perfect time to join our team! Whether as a climbing instructor high up in the trees, at the ticket counter with direct guest contact, or in marketing – you can expect a family-like team, varied tasks and a workplace in the heart of nature.",
+    benefitsTitle: "What We Offer",
+    benefits: [
+      { title: "Work in Nature", desc: "Your office is the forest – fresh air and birdsong included." },
+      { title: "Flexible Hours", desc: "Seasonal working hours, ideal for students or as a side job." },
+      { title: "Free Climbing", desc: "As a team member, you can use our courses for free anytime." },
+      { title: "Great Team", desc: "A motivated, young team that sticks together and enjoys their work." },
+    ],
+    formTitle: "Application Form",
+    firstName: "First Name",
+    lastName: "Last Name",
+    email: "Email",
+    phone: "Phone (optional)",
+    position: "Desired Position / Area",
+    positionPlaceholder: "Please select...",
+    positions: ["Climbing Instructor", "Ticket Counter", "Marketing", "Internship"],
+    motivation: "Brief Motivation",
+    motivationPlaceholder: "Tell us briefly why you'd like to work with us…",
+    filesLabel: "Upload files (optional)",
+    filesDragText: "Drag files here or",
+    filesBrowse: "browse",
+    filesMax: "Max. 10 MB total",
+    filesCount: "files",
+    fileCount: "file",
+    captchaLabel: "Security question:",
+    captchaPlaceholder: "Your answer",
+    privacyText: "I have read the",
+    privacyLink: "Privacy Policy",
+    privacyEnd: "and agree to the processing of my data.",
+    submit: "Submit application",
+    successTitle: "Application sent!",
+    successDescription: "Thank you for your interest. We will get back to you as soon as possible.",
+    ctaTitle: "We Look Forward to Hearing From You!",
+    ctaDescription: "For questions about the application, you can reach us anytime via our contact page.",
+    validation: {
+      minChars: "At least 2 characters",
+      maxChars50: "Maximum 50 characters",
+      maxChars100: "Maximum 100 characters",
+      maxChars1000: "Maximum 1000 characters",
+      validEmail: "Please enter a valid email address",
+      selectPosition: "Please select a position",
+      minMotivation: "At least 10 characters",
+      solveCaptcha: "Please solve the math problem",
+      wrongAnswer: "Wrong answer, please try again",
+      acceptPrivacy: "You must accept the privacy policy",
+      fileTooLarge: "exceeds the 10 MB limit",
+    },
+  },
+  abenteuerPage: {
+    metaTitle: "Adventure · Kletterwald Staufen",
+    metaDescription: "Courses, attractions and treasure hunt at Kletterwald Staufen – adventure for the whole family in the Black Forest.",
+    badge: "Adventure",
+    title: "Your Adventure Awaits",
+    description: "Courses, attractions and treasure hunt – experience unforgettable moments in the treetops.",
+    treasureHunt: {
+      badge: "Treasure Hunt",
+      title: "Treasure Hunt in the Climbing Forest",
+      description: "A special experience for birthday parties and groups – find the hidden treasure!",
+      cardTitle: "Treasure Hunt",
+      cardDescription: "Perfect for birthdays and special occasions. The children solve riddles and tasks in the forest to find the treasure. An unforgettable adventure!",
+      price: "€65",
+      priceNote: "plus admission tickets",
+    },
+    ctaTitle: "Ready for Your Adventure?",
+    ctaDescription: "Secure your spot at Kletterwald Staufen now!",
+    ctaPrices: "View prices",
+  },
+  impressumPage: { title: "Imprint", content: "Content coming soon." },
+  datenschutzPage: { title: "Privacy Policy", content: "Content coming soon." },
+  agbPage: { title: "Terms & Conditions", content: "Content coming soon." },
+  notFound: {
+    title: "404",
+    message: "Page not found",
+    link: "Return to Home",
+  },
+  weather: {
+    title: "Weather at the Climbing Forest",
+    wind: "Wind",
+    humidity: "Humidity",
+    forecast: "Forecast",
+    sunrise: "Sunrise",
+    sunset: "Sunset",
+    rainChance: "Rain chance",
+    today: "Today",
+    tomorrow: "Tomorrow",
+    dayAfterTomorrow: "Day after tomorrow",
+    conditions: {
+      clear: "Clear",
+      partlyCloudy: "Partly cloudy",
+      cloudy: "Cloudy",
+      fog: "Fog",
+      drizzle: "Drizzle",
+      rain: "Rain",
+      snow: "Snow",
+      showers: "Showers",
+      thunderstorm: "Thunderstorm",
+    },
+  },
 };

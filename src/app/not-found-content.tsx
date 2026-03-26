@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 import { useLanguage } from "@/i18n/LanguageContext";
@@ -17,9 +18,9 @@ export function NotFoundContent() {
       <div className="text-center">
         <h1 className="mb-4 text-4xl font-bold">{t.notFound.title}</h1>
         <p className="mb-4 text-xl text-muted-foreground">{t.notFound.message}</p>
-        <a href="/" className="text-primary underline hover:text-primary/90">
+        <Link href="/" className="text-primary underline hover:text-primary/90">
           {t.notFound.link}
-        </a>
+        </Link>
       </div>
     </div>
   );

@@ -4,10 +4,6 @@ import { de } from "@/i18n";
 
 export const metadata: Metadata = buildMetadata(de.meta.impressum, "/impressum");
 
-export default function ImpressumLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function ImpressumLayout({ children }: { children: React.ReactNode }) {
   return children;
 }

@@ -38,7 +38,9 @@ const PreisSection = () => {
                   <h3 className="text-xl font-bold text-foreground mb-1" style={{ fontFamily: "'Fredoka One', cursive" }}>
                     {p.category}
                   </h3>
-                  <p className="text-muted-foreground text-sm mb-4">{p.age}</p>
+                  <p className="text-muted-foreground text-sm mb-4">
+                    {p.height} · {p.ageReq}
+                  </p>
                   <div className="text-4xl font-bold text-primary mb-2" style={{ fontFamily: "'Fredoka One', cursive" }}>
                     {p.price}
                   </div>

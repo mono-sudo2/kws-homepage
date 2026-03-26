@@ -23,6 +23,7 @@ const PATH_TO_META_KEY: Record<string, MetaKey> = {
   "/jobs": "jobs",
   "/datenschutz": "datenschutz",
   "/agb": "agb",
+  "/abenteuer": "abenteuer",
 };
 
 function setMetaTag(attribute: "name" | "property", key: string, content: string) {

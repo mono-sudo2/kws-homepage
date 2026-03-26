@@ -4,10 +4,6 @@ import { de } from "@/i18n";
 
 export const metadata: Metadata = buildMetadata(de.meta.kontakt, "/kontakt");
 
-export default function KontaktLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function KontaktLayout({ children }: { children: React.ReactNode }) {
   return children;
 }

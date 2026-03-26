@@ -4,10 +4,6 @@ import { de } from "@/i18n";
 
 export const metadata: Metadata = buildMetadata(de.meta.agb, "/agb");
 
-export default function AgbLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function AgbLayout({ children }: { children: React.ReactNode }) {
   return children;
 }

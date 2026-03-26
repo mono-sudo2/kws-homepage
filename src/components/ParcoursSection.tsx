@@ -70,7 +70,6 @@ const ParcoursSection = () => {
                       <span>{t.parcours.difficulty}</span>
                       <DifficultyBar level={difficulties[i]} />
                     </div>
-                    <span className="bg-muted px-2 py-1 rounded-md">⏱ {p.duration}</span>
                     <span className="bg-muted px-2 py-1 rounded-md">📏 {p.minHeight}</span>
                   </div>
                 </CardContent>

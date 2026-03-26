@@ -4,10 +4,6 @@ import { de } from "@/i18n";
 
 export const metadata: Metadata = buildMetadata(de.meta.datenschutz, "/datenschutz");
 
-export default function DatenschutzLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function DatenschutzLayout({ children }: { children: React.ReactNode }) {
   return children;
 }

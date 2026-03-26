@@ -4,10 +4,6 @@ import { de } from "@/i18n";
 
 export const metadata: Metadata = buildMetadata(de.meta.preise, "/preise");
 
-export default function PreiseLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function PreiseLayout({ children }: { children: React.ReactNode }) {
   return children;
 }

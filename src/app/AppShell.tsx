@@ -2,6 +2,7 @@
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import WeatherWidget from "@/components/WeatherWidget";
 
 export function AppShell({ children }: { children: React.ReactNode }) {
   return (
@@ -9,6 +10,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
       <Header />
       <main>{children}</main>
       <Footer />
+      <WeatherWidget />
     </div>
   );
 }

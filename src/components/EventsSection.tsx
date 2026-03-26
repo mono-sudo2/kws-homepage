@@ -57,10 +57,10 @@ const EventsSection = () => {
                       {event.description}
                     </p>
                     <ul className="space-y-1">
-                      {event.features.map((f) => (
-                        <li key={f} className="text-sm text-muted-foreground flex items-center gap-2">
+                      {event.features.map((f, idx) => (
+                        <li key={typeof f === 'string' ? f : idx} className="text-sm text-muted-foreground flex items-center gap-2">
                           <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
-                          {f}
+                          {typeof f === 'string' ? f : String(f)}
                         </li>
                       ))}
                     </ul>

@@ -1,16 +1,18 @@
+"use client";
+
 import { useState } from "react";
 import { Menu } from "lucide-react";
+import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 import logo from "@/assets/logo.png";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
-import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
 import { BOOKING_URL } from "@/lib/constants";
 import { useLanguage } from "@/i18n/LanguageContext";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 
-const navKeys = ["start", "preise", "oeffnungszeiten", "ueberUns", "kontakt", "jobs"] as const;
-const navHrefs = ["/", "/preise", "/oeffnungszeiten", "/ueber-uns", "/kontakt", "/jobs"];
+const navKeys = ["start", "abenteuer", "preise", "oeffnungszeiten", "ueberUns", "kontakt", "jobs"] as const;
+const navHrefs = ["/", "/abenteuer", "/preise", "/oeffnungszeiten", "/ueber-uns", "/kontakt", "/jobs"];
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -136,7 +138,7 @@ const Header = () => {
                       key={item.href}
                       href={item.href.substring(1)}
                       onClick={(e) => {
-                        if (location.pathname !== "/") {
+                        if (pathname !== "/") {
                           e.preventDefault();
                         }
                         handleNavClick(item.href);

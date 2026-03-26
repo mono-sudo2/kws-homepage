@@ -1,6 +1,5 @@
-import { Baby, User, Users, Star } from "lucide-react";
+import { Baby, User, Users, Ruler, Cake } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 const priceIcons = [Baby, User, Users];
@@ -38,9 +37,18 @@ const PreisSection = () => {
                   <h3 className="text-xl font-bold text-foreground mb-1" style={{ fontFamily: "'Fredoka One', cursive" }}>
                     {p.category}
                   </h3>
-                  <p className="text-muted-foreground text-sm mb-4">
-                    {p.height} · {p.ageReq}
-                  </p>
+                  <div className="flex flex-col items-center gap-2 mb-4">
+                    {p.height && (
+                      <span className="inline-flex items-center gap-1.5 bg-muted text-muted-foreground rounded-full px-3 py-1 text-xs font-semibold">
+                        <Ruler className="h-3.5 w-3.5" />
+                        {p.height}
+                      </span>
+                    )}
+                    <span className="inline-flex items-center gap-1.5 bg-muted text-muted-foreground rounded-full px-3 py-1 text-xs font-semibold">
+                      <Cake className="h-3.5 w-3.5" />
+                      {p.ageReq}
+                    </span>
+                  </div>
                   <div className="text-4xl font-bold text-primary mb-2" style={{ fontFamily: "'Fredoka One', cursive" }}>
                     {p.price}
                   </div>

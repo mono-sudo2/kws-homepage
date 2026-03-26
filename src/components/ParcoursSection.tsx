@@ -1,28 +1,14 @@
-import { Baby, Users, Wind, Rocket } from "lucide-react";
+import { Baby, Zap, Mountain, Flame, ArrowDownCircle, Wind } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useLanguage } from "@/i18n/LanguageContext";
 
-const parcoursIcons = [Baby, Users, Wind, Rocket];
+const parcoursIcons = [Baby, Zap, Mountain, Flame];
 const parcoursColors = [
-  { color: "bg-secondary", borderColor: "border-primary/30" },
-  { color: "bg-secondary", borderColor: "border-primary/40" },
-  { color: "bg-amber-light", borderColor: "border-accent/40" },
-  { color: "bg-amber-light", borderColor: "border-accent/60" },
+  { bg: "bg-yellow-50", border: "border-yellow-400", iconBg: "bg-yellow-100", dot: "bg-yellow-400" },
+  { bg: "bg-green-50", border: "border-green-500", iconBg: "bg-green-100", dot: "bg-green-500" },
+  { bg: "bg-blue-50", border: "border-blue-500", iconBg: "bg-blue-100", dot: "bg-blue-500" },
+  { bg: "bg-red-50", border: "border-red-500", iconBg: "bg-red-100", dot: "bg-red-500" },
 ];
-const difficulties = [1, 2, 3, 4];
-
-const DifficultyBar = ({ level }: { level: number }) => (
-  <div className="flex gap-1">
-    {[1, 2, 3, 4].map((i) => (
-      <div
-        key={i}
-        className={`h-2 w-6 rounded-full transition-colors ${
-          i <= level ? "bg-primary" : "bg-border"
-        }`}
-      />
-    ))}
-  </div>
-);
 
 const ParcoursSection = () => {
   const { t } = useLanguage();
@@ -42,6 +28,7 @@ const ParcoursSection = () => {
           </p>
         </div>
 
+        {/* Parcours Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {t.parcours.items.map((p, i) => {
             const Icon = parcoursIcons[i];
@@ -49,33 +36,98 @@ const ParcoursSection = () => {
             return (
               <Card
                 key={i}
-                className={`${style.borderColor} border-2 hover:shadow-xl transition-all duration-300 overflow-hidden`}
+                className={`${style.border} border-2 hover:shadow-xl transition-all duration-300 overflow-hidden`}
               >
-                <CardHeader className={`${style.color} pb-4`}>
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-3">
-                      <div className="bg-card rounded-xl p-2.5 shadow-sm">
-                        <Icon className="h-6 w-6 text-primary" />
-                      </div>
-                      <CardTitle className="text-xl text-foreground">{p.name}</CardTitle>
+                <CardHeader className={`${style.bg} pb-4`}>
+                  <div className="flex items-center gap-3">
+                    <div className={`${style.iconBg} rounded-xl p-2.5 shadow-sm`}>
+                      <Icon className="h-6 w-6 text-foreground" />
                     </div>
+                    <CardTitle className="text-xl text-foreground">{p.name}</CardTitle>
+                    {p.badge && (
+                      <span className={`ml-auto text-xs font-bold px-2.5 py-1 rounded-full ${style.border} border bg-card text-foreground`}>
+                        {p.badge}
+                      </span>
+                    )}
                   </div>
                 </CardHeader>
                 <CardContent className="pt-4">
                   <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
                     {p.description}
                   </p>
-                  <div className="flex flex-wrap items-center gap-4 text-xs font-semibold text-muted-foreground">
-                    <div className="flex items-center gap-2">
-                      <span>{t.parcours.difficulty}</span>
-                      <DifficultyBar level={difficulties[i]} />
+                  {p.courses && (
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      {p.courses.map((course: { name: string; color: string }, ci: number) => {
+                        const colorMap: Record<string, string> = {
+                          yellow: "bg-yellow-400 text-yellow-950",
+                          green: "bg-green-500 text-white",
+                          blue: "bg-blue-500 text-white",
+                          red: "bg-red-500 text-white",
+                          "yellow-blue": "text-white",
+                        };
+                        return (
+                          <span
+                            key={ci}
+                            className={`${colorMap[course.color] || "bg-muted text-muted-foreground"} px-3 py-1 rounded-full text-xs font-bold shadow-sm`}
+                            style={course.color === "yellow-blue" ? { background: "linear-gradient(90deg, #facc15 50%, #3b82f6 50%)" } : undefined}
+                          >
+                            {course.name}
+                          </span>
+                        );
+                      })}
                     </div>
-                    <span className="bg-muted px-2 py-1 rounded-md">📏 {p.minHeight}</span>
+                  )}
+                  <div className="flex flex-wrap items-center gap-2 text-xs font-semibold">
+                    <span className="bg-muted text-muted-foreground px-2.5 py-1 rounded-md">📏 {p.minHeight}</span>
+                    {i > 0 && (
+                      <span className="bg-muted text-muted-foreground px-2.5 py-1 rounded-md">🎂 {t.parcours.minAge}</span>
+                    )}
                   </div>
                 </CardContent>
               </Card>
             );
           })}
+        </div>
+
+        {/* Attraktionen */}
+        <div className="mt-16 max-w-4xl mx-auto">
+          <div className="text-center mb-8">
+            <h3 className="text-2xl sm:text-3xl text-foreground mb-2">
+              {t.parcours.attractionsTitle}
+            </h3>
+            <p className="text-muted-foreground text-lg">
+              {t.parcours.attractionsDescription}
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {t.parcours.attractions.map((a, i) => {
+              const AttrIcon = i === 0 ? ArrowDownCircle : Wind;
+              return (
+                <Card
+                  key={i}
+                  className="border-2 border-primary/40 bg-gradient-to-br from-primary/5 to-accent/10 hover:shadow-xl transition-all duration-300 overflow-hidden"
+                >
+                  <CardHeader className="pb-4">
+                    <div className="flex items-center gap-3">
+                      <div className="bg-primary/10 rounded-xl p-2.5 shadow-sm">
+                        <AttrIcon className="h-6 w-6 text-primary" />
+                      </div>
+                      <CardTitle className="text-xl text-foreground">{a.name}</CardTitle>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="pt-0">
+                    <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
+                      {a.description}
+                    </p>
+                    <div className="flex flex-wrap items-center gap-2 text-xs font-semibold">
+                      <span className="bg-muted text-muted-foreground px-2.5 py-1 rounded-md">📏 {a.minHeight}</span>
+                      <span className="bg-muted text-muted-foreground px-2.5 py-1 rounded-md">🎂 {t.parcours.minAge}</span>
+                    </div>
+                  </CardContent>
+                </Card>
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>

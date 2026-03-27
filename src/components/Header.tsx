@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { Menu, TreePine } from "lucide-react";
+import { Menu } from "lucide-react";
+import logo from "@/assets/logo.png";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
 import Link from "next/link";
@@ -44,7 +45,13 @@ const Header = () => {
       <div className="container mx-auto flex items-center justify-between h-16 px-4">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 group">
-          <TreePine className="h-9 w-9 text-primary group-hover:scale-110 transition-transform" />
+          <img
+            src={logo.src}
+            alt="Kletterwald Staufen"
+            className="h-9 w-9 object-contain group-hover:scale-110 transition-transform"
+            width={36}
+            height={36}
+          />
           <div className="flex items-center">
             <span className="text-lg font-bold text-foreground tracking-tight">
               Kletterwald <span className="text-primary">Staufen</span>
@@ -107,7 +114,13 @@ const Header = () => {
             <SheetContent side="right" className="bg-card w-72">
               <SheetTitle className="sr-only">Navigation</SheetTitle>
               <div className="flex items-center gap-2 mb-8 mt-2">
-                <TreePine className="h-8 w-8 text-primary" />
+                <img
+                  src={logo.src}
+                  alt="Kletterwald Staufen"
+                  className="h-8 w-8 object-contain"
+                  width={32}
+                  height={32}
+                />
                 <span className="font-bold text-foreground">Kletterwald Staufen</span>
               </div>
               <Button

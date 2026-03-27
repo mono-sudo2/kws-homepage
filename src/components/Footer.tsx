@@ -1,6 +1,7 @@
 "use client";
 
-import { MapPin, Phone, Mail, Facebook, Instagram, Youtube, TreePine } from "lucide-react";
+import { MapPin, Phone, Mail, Facebook, Instagram, Youtube } from "lucide-react";
+import logo from "@/assets/logo.png";
 import Link from "next/link";
 import { useLanguage } from "@/i18n/LanguageContext";
 
@@ -65,7 +66,13 @@ const Footer = () => {
 
         <div className="border-t border-primary-foreground/20 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2 opacity-70">
-            <TreePine className="h-8 w-8 text-primary-foreground" />
+            <img
+              src={logo.src}
+              alt="Kletterwald Staufen"
+              className="h-8 w-8 object-contain"
+              width={32}
+              height={32}
+            />
             <span className="text-xs text-primary-foreground/60">
               {t.footer.copyright}
             </span>

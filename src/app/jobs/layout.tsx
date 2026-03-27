@@ -1,9 +1,17 @@
 import type { Metadata } from "next";
 import { buildMetadata } from "@/lib/metadata";
-import { de } from "@/i18n";
 
-export const metadata: Metadata = buildMetadata(de.meta.jobs, "/jobs");
+export const metadata: Metadata = buildMetadata(
+  {
+    title: "Jobs · Kletterwald Staufen",
+    description:
+      "Offene Stellen im Kletterwald Staufen. Werde Teil unseres Teams und arbeite mitten in der Natur.",
+  },
+  "/jobs",
+);
 
-export default function JobsLayout({ children }: { children: React.ReactNode }) {
+export default function JobsLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
   return children;
 }

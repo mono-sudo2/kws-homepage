@@ -1,3 +1,5 @@
+"use client";
+
 import { Baby, Zap, Mountain, Flame, ArrowDownCircle, Wind } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useLanguage } from "@/i18n/LanguageContext";
@@ -36,7 +38,7 @@ const ParcoursSection = () => {
             return (
               <Card
                 key={i}
-                className={`${style.border} border-2 hover:shadow-xl transition-all duration-300 overflow-hidden`}
+                className={`${style.border} border-2 hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col`}
               >
                 <CardHeader className={`${style.bg} pb-4`}>
                   <div className="flex items-center gap-3">
@@ -51,12 +53,12 @@ const ParcoursSection = () => {
                     )}
                   </div>
                 </CardHeader>
-                <CardContent className="pt-4">
+                <CardContent className="pt-4 flex flex-col flex-grow">
                   <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
                     {p.description}
                   </p>
                   {p.courses && (
-                    <div className="flex flex-wrap gap-2 mb-4">
+                    <div className="flex flex-wrap gap-2 mb-2">
                       {p.courses.map((course: { name: string; color: string }, ci: number) => {
                         const colorMap: Record<string, string> = {
                           yellow: "bg-yellow-400 text-yellow-950",
@@ -77,7 +79,37 @@ const ParcoursSection = () => {
                       })}
                     </div>
                   )}
-                  <div className="flex flex-wrap items-center gap-2 text-xs font-semibold">
+                  {p.specialCourse && (
+                    <>
+                      <div className="border-t border-border my-3" />
+                      <div className="flex flex-wrap items-center gap-2 mb-2">
+                        <span
+                          className="text-white px-3 py-1 rounded-full text-xs font-bold shadow-sm"
+                          style={{ background: "linear-gradient(90deg, #facc15 50%, #3b82f6 50%)" }}
+                        >
+                          {p.specialCourse.name}
+                        </span>
+                        <span className="text-xs text-muted-foreground italic">
+                          ⚠ {p.specialCourse.note}
+                        </span>
+                      </div>
+                      <div className="border-t border-border mt-3" />
+                    </>
+                  )}
+                  {p.attraction && (
+                    <>
+                      <div className="border-t border-border my-3" />
+                      <div className="mb-2">
+                        <div className="flex items-center gap-2 mb-1">
+                          <Wind className="h-4 w-4 text-primary" />
+                          <span className="text-sm font-bold text-foreground">{p.attraction.name}</span>
+                        </div>
+                        <p className="text-xs text-muted-foreground leading-relaxed">{p.attraction.description}</p>
+                      </div>
+                      <div className="border-t border-border mt-3" />
+                    </>
+                  )}
+                  <div className="flex flex-wrap items-center gap-2 text-xs font-semibold mt-auto pt-4">
                     <span className="bg-muted text-muted-foreground px-2.5 py-1 rounded-md">📏 {p.minHeight}</span>
                     {i > 0 && (
                       <span className="bg-muted text-muted-foreground px-2.5 py-1 rounded-md">🎂 {t.parcours.minAge}</span>

@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useState, useMemo } from "react";
 import { MapPin, Phone, Mail, Send, TreePine, TrainFront } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -13,7 +12,8 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { toast } from "sonner";
-import preiseHeroBg from "@/assets/preise-hero-bg.jpg";
+import Link from "next/link";
+import preiseHeroBg from "@/assets/hero-bg-2.jpg";
 import { BOOKING_URL } from "@/lib/constants";
 import { useLanguage } from "@/i18n/LanguageContext";
 

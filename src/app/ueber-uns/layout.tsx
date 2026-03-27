@@ -1,9 +1,17 @@
 import type { Metadata } from "next";
 import { buildMetadata } from "@/lib/metadata";
-import { de } from "@/i18n";
 
-export const metadata: Metadata = buildMetadata(de.meta.ueberUns, "/ueber-uns");
+export const metadata: Metadata = buildMetadata(
+  {
+    title: "Ueber uns · Kletterwald Staufen",
+    description:
+      "Erfahre mehr ueber den Kletterwald Staufen, unsere Geschichte, Werte und das Team hinter dem Park.",
+  },
+  "/ueber-uns",
+);
 
-export default function UeberUnsLayout({ children }: { children: React.ReactNode }) {
+export default function UeberUnsLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
   return children;
 }

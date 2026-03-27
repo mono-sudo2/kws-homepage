@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useState, useCallback, useRef, useMemo } from "react";
 import { Briefcase, Send, TreePine, Upload, X, Clock, Users, Heart, MapPin } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
@@ -16,7 +15,8 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { toast } from "sonner";
-import preiseHeroBg from "@/assets/preise-hero-bg.jpg";
+import Link from "next/link";
+import preiseHeroBg from "@/assets/hero-bg-2.jpg";
 
 const WavyBottom = ({ fill }: { fill: string }) => (
   <div className="absolute bottom-0 left-0 right-0">

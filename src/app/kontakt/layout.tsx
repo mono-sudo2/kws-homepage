@@ -1,9 +1,17 @@
 import type { Metadata } from "next";
 import { buildMetadata } from "@/lib/metadata";
-import { de } from "@/i18n";
 
-export const metadata: Metadata = buildMetadata(de.meta.kontakt, "/kontakt");
+export const metadata: Metadata = buildMetadata(
+  {
+    title: "Kontakt · Kletterwald Staufen",
+    description:
+      "Kontakt zum Kletterwald Staufen: Adresse, Telefon, E-Mail und Kontaktformular fuer Fragen und Reservierungen.",
+  },
+  "/kontakt",
+);
 
-export default function KontaktLayout({ children }: { children: React.ReactNode }) {
+export default function KontaktLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
   return children;
 }

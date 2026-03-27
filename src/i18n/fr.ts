@@ -13,58 +13,6 @@ export const fr: Translations = {
     },
     cta: "Réserver",
   },
-  meta: {
-    home: {
-      title: "Kletterwald Staufen – Aventure en Forêt-Noire",
-      description:
-        "Aventures d'escalade dans le plus grand parc d'escalade du sud de la Forêt-Noire. Plus de 15 parcours, plus de 200 éléments – du plaisir pour toute la famille.",
-    },
-    impressum: {
-      title: "Mentions légales · Kletterwald Staufen",
-      description: "Mentions légales du Kletterwald Staufen – informations conformément à la loi allemande.",
-    },
-    datenschutz: {
-      title: "Confidentialité · Kletterwald Staufen",
-      description: "Politique de confidentialité du Kletterwald Staufen – traitement de vos données.",
-    },
-    agb: {
-      title: "CGV · Kletterwald Staufen",
-      description: "Conditions générales du Kletterwald Staufen.",
-    },
-    oeffnungszeiten: {
-      title: "Horaires · Kletterwald Staufen",
-      description:
-        "Horaires actuels du Kletterwald Staufen – saisons, jours fériés et horaires spéciaux en un coup d'œil.",
-    },
-    ueberUns: {
-      title: "À propos · Kletterwald Staufen",
-      description:
-        "En savoir plus sur le Kletterwald Staufen – depuis plus de 15 ans le plus grand parc d'escalade du sud de la Forêt-Noire, passion, sécurité et nature.",
-    },
-    kontakt: {
-      title: "Contact · Kletterwald Staufen",
-      description:
-        "Contactez le Kletterwald Staufen pour questions, réservations et groupes. Nous sommes là pour vous aider.",
-    },
-    jobs: {
-      title: "Emplois · Kletterwald Staufen",
-      description: "Postes ouverts au Kletterwald Staufen. Rejoignez notre équipe et travaillez en Forêt-Noire.",
-    },
-    preise: {
-      title: "Tarifs & billets · Kletterwald Staufen",
-      description:
-        "Tarifs équitables pour enfants, ados et adultes au Kletterwald Staufen. Réservez vos billets et vivez l'aventure.",
-    },
-    abenteuer: {
-      title: "Aventure · Kletterwald Staufen",
-      description:
-        "Parcours, attractions et chasse au trésor au Kletterwald Staufen – aventure pour toute la famille en Forêt-Noire.",
-    },
-    notFound: {
-      title: "Page introuvable · Kletterwald Staufen",
-      description: "La page demandée est introuvable.",
-    },
-  },
   hero: {
     title: "Bienvenue au Kletterwald Staufen",
     subtitle: "Aventure en Forêt-Noire",
@@ -92,14 +40,14 @@ export const fr: Translations = {
     attractionsDescription: "Encore plus d'action pour les amateurs d'adrénaline !",
     minAge: "à partir de 12 ans",
     items: [
-      { name: "Parcours Enfants", minHeight: "120–140 cm", description: "Le début parfait pour les petits aventuriers ! Faible hauteur, beaucoup de plaisir et des stations adaptées aux enfants.", badge: "", courses: [{ name: "K1", color: "yellow" }, { name: "K2", color: "yellow" }, { name: "MiDi", color: "yellow-blue" }] },
-      { name: "Tyroliennes", minHeight: "à partir de 140 cm", description: "Tyroliennes rapides à travers la forêt – pour ceux qui recherchent le frisson !", badge: "", courses: [{ name: "S1", color: "green" }, { name: "S2", color: "green" }] },
-      { name: "Parcours Débutant", minHeight: "à partir de 140 cm", description: "Idéal pour les familles et les débutants. Des éléments variés à hauteur modérée.", badge: "", courses: [{ name: "A1", color: "blue" }, { name: "A2", color: "blue" }, { name: "A3", color: "blue" }, { name: "A4", color: "blue" }] },
+      { name: "Parcours Enfants", minHeight: "120–140 cm", description: "Le début parfait pour les petits aventuriers ! Faible hauteur, beaucoup de plaisir et des stations adaptées aux enfants.", badge: "", courses: [{ name: "K1", color: "yellow" }, { name: "K2", color: "yellow" }], specialCourse: { name: "MiDi", color: "yellow-blue", note: "Uniquement pour les enfants en forme – accompagnés d'un adulte" } },
+      { name: "Tyroliennes", minHeight: "à partir de 140 cm", description: "Tyroliennes rapides à travers la forêt – pour ceux qui recherchent le frisson !", badge: "", courses: [{ name: "S1", color: "green" }, { name: "S2", color: "green" }, { name: "S3", color: "green" }], attraction: { name: "Jump & Fly", description: "Volez à travers les cimes – attaché au câble pour un maximum de plaisir !", minHeight: "à partir de 140 cm" } },
+      { name: "Parcours Débutant", minHeight: "à partir de 140 cm", description: "Idéal pour les familles et les débutants. Des éléments variés à hauteur modérée.", badge: "", courses: [{ name: "MiDi", color: "yellow-blue" }, { name: "A1", color: "blue" }, { name: "A2", color: "blue" }, { name: "A3", color: "blue" }, { name: "A4", color: "blue" }] },
       { name: "Parcours Avancé", minHeight: "à partir de 140 cm", description: "Stations exigeantes pour grimpeurs expérimentés. Ici, ça devient vraiment corsé !", badge: "", courses: [{ name: "B1", color: "red" }, { name: "B2", color: "red" }, { name: "B3", color: "red" }] },
     ],
     attractions: [
       { name: "Base Jump", minHeight: "à partir de 140 cm", description: "Sautez de hauteurs vertigineuses – la montée d'adrénaline ultime !" },
-      { name: "Jump & Fly", minHeight: "à partir de 140 cm", description: "Volez à travers les cimes – attaché au câble pour un maximum de plaisir !" },
+      { name: "Jump & Fly", minHeight: "à partir de 140 cm", description: "Volez à travers les cimes – assuré par une corde pour un maximum de plaisir !" },
     ],
   },
   preise: {
@@ -108,10 +56,11 @@ export const fr: Translations = {
     description: "Tous les tarifs incluent l'équipement de sécurité et l'instruction professionnelle.",
     categories: [
       { category: "S", height: "120–140 cm", ageReq: "moins de 12 ans", price: "19 €", note: "Parcours enfants" },
-      { category: "M", height: "dès 140 cm", ageReq: "moins de 12 ans", price: "25 €", note: "Tous parcours inclus" },
+      { category: "M", height: "dès 140 cm", ageReq: "moins de 12 ans", price: "25 €", note: "Tous parcours inclus*" },
       { category: "L", height: "à partir de 140 cm", ageReq: "dès 12 ans", price: "30 €", note: "Tous parcours inclus" },
     ],
-    hint: "💡 Réservation à l'avance recommandée. Le briefing sécurité dure env. 30 minutes et est inclus dans le prix. Enfants de moins de 12 ans uniquement accompagnés d'un adulte.",
+    hint: "💡 Réservation à l'avance recommandée. Le briefing sécurité dure env. 30 minutes et est inclus dans le prix.",
+    footnote: "* Uniquement accompagné d'un adulte. Un adulte peut encadrer deux enfants maximum.",
     link: "Voir tous les tarifs & détails →",
     bestOffer: "Meilleure offre",
   },
@@ -200,7 +149,7 @@ export const fr: Translations = {
     ctaDescription: "Réservez votre place au Kletterwald Staufen – réservation à l'avance recommandée !",
     categories: [
       { category: "S", height: "120–140 cm", ageReq: "moins de 12 ans", price: "19 €", note: "Parcours enfants", details: "Accès au parcours enfants. Enfants de moins de 12 ans uniquement accompagnés d'un adulte." },
-      { category: "M", height: "dès 140 cm", ageReq: "moins de 12 ans", price: "25 €", note: "Tous parcours inclus", details: "Accès à tous les parcours. Enfants de moins de 12 ans uniquement accompagnés d'un adulte." },
+      { category: "M", height: "dès 140 cm", ageReq: "moins de 12 ans", price: "25 €", note: "Tous parcours inclus*", details: "Accès à tous les parcours. Enfants de moins de 12 ans uniquement accompagnés d'un adulte." },
       { category: "L", height: "à partir de 140 cm", ageReq: "dès 12 ans", price: "30 €", note: "Tous parcours inclus", details: "Accès illimité à tous les parcours incl. Base Jump & tyroliennes." },
     ],
   },

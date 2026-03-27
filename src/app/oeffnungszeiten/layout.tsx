@@ -1,9 +1,17 @@
 import type { Metadata } from "next";
 import { buildMetadata } from "@/lib/metadata";
-import { de } from "@/i18n";
 
-export const metadata: Metadata = buildMetadata(de.meta.oeffnungszeiten, "/oeffnungszeiten");
+export const metadata: Metadata = buildMetadata(
+  {
+    title: "Oeffnungszeiten · Kletterwald Staufen",
+    description:
+      "Aktuelle Oeffnungszeiten des Kletterwald Staufen mit Saisonzeiten, Feiertagen und Sonderoeffnungszeiten.",
+  },
+  "/oeffnungszeiten",
+);
 
-export default function OeffnungszeitenLayout({ children }: { children: React.ReactNode }) {
+export default function OeffnungszeitenLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
   return children;
 }

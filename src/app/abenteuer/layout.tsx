@@ -1,9 +1,17 @@
 import type { Metadata } from "next";
 import { buildMetadata } from "@/lib/metadata";
-import { de } from "@/i18n";
 
-export const metadata: Metadata = buildMetadata(de.meta.abenteuer, "/abenteuer");
+export const metadata: Metadata = buildMetadata(
+  {
+    title: "Abenteuer · Kletterwald Staufen",
+    description:
+      "Parcours, Attraktionen und Schatzsuche im Kletterwald Staufen fuer die ganze Familie im Schwarzwald.",
+  },
+  "/abenteuer",
+);
 
-export default function AbenteuerLayout({ children }: { children: React.ReactNode }) {
+export default function AbenteuerLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
   return children;
 }

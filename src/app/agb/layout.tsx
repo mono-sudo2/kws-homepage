@@ -1,9 +1,16 @@
 import type { Metadata } from "next";
 import { buildMetadata } from "@/lib/metadata";
-import { de } from "@/i18n";
 
-export const metadata: Metadata = buildMetadata(de.meta.agb, "/agb");
+export const metadata: Metadata = buildMetadata(
+  {
+    title: "AGB · Kletterwald Staufen",
+    description: "Allgemeine Geschaeftsbedingungen des Kletterwald Staufen.",
+  },
+  "/agb",
+);
 
-export default function AgbLayout({ children }: { children: React.ReactNode }) {
+export default function AGBLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
   return children;
 }

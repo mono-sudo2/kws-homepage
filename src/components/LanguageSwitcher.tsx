@@ -1,3 +1,5 @@
+"use client";
+
 import { ChevronDown, Check } from "lucide-react";
 import {
   DropdownMenu,

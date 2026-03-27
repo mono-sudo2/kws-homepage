@@ -13,55 +13,6 @@ export const en: Translations = {
     },
     cta: "Book now",
   },
-  meta: {
-    home: {
-      title: "Kletterwald Staufen – Adventure in the Black Forest",
-      description:
-        "Climbing adventures in the largest climbing park in South Baden. 15+ courses, 200+ climbing elements – fun for the whole family in the Black Forest.",
-    },
-    impressum: {
-      title: "Legal notice · Kletterwald Staufen",
-      description: "Legal notice for Kletterwald Staufen – information in accordance with German law.",
-    },
-    datenschutz: {
-      title: "Privacy · Kletterwald Staufen",
-      description: "Privacy policy for Kletterwald Staufen – how we handle your data.",
-    },
-    agb: {
-      title: "Terms · Kletterwald Staufen",
-      description: "General terms and conditions of Kletterwald Staufen.",
-    },
-    oeffnungszeiten: {
-      title: "Opening hours · Kletterwald Staufen",
-      description: "Current opening hours at Kletterwald Staufen – seasons, holidays and special hours at a glance.",
-    },
-    ueberUns: {
-      title: "About us · Kletterwald Staufen",
-      description:
-        "Learn more about Kletterwald Staufen – for over 15 years the largest climbing park in South Baden with passion, safety and nature.",
-    },
-    kontakt: {
-      title: "Contact · Kletterwald Staufen",
-      description: "Contact Kletterwald Staufen for questions, bookings and group requests. We are happy to help.",
-    },
-    jobs: {
-      title: "Jobs · Kletterwald Staufen",
-      description: "Open positions at Kletterwald Staufen. Join our team and work in the Black Forest.",
-    },
-    preise: {
-      title: "Prices & tickets · Kletterwald Staufen",
-      description: "Fair prices for children, teens and adults at Kletterwald Staufen. Book tickets and enjoy climbing adventures.",
-    },
-    abenteuer: {
-      title: "Adventure · Kletterwald Staufen",
-      description:
-        "Courses, attractions and treasure hunt at Kletterwald Staufen – adventure for the whole family in the Black Forest.",
-    },
-    notFound: {
-      title: "Page not found · Kletterwald Staufen",
-      description: "The page you are looking for could not be found.",
-    },
-  },
   hero: {
     title: "Welcome to Kletterwald Staufen",
     subtitle: "Adventure in the Black Forest",
@@ -89,9 +40,9 @@ export const en: Translations = {
     attractionsDescription: "Even more action for adrenaline junkies!",
     minAge: "from 12 years",
     items: [
-      { name: "Children's Course", minHeight: "120–140 cm", description: "The perfect start for little adventurers! Low height, lots of fun and child-friendly stations.", badge: "", courses: [{ name: "K1", color: "yellow" }, { name: "K2", color: "yellow" }, { name: "MiDi", color: "yellow-blue" }] },
-      { name: "Zip Lines", minHeight: "from 140 cm", description: "Fast zip lines through the forest – for those seeking thrills!", badge: "", courses: [{ name: "S1", color: "green" }, { name: "S2", color: "green" }] },
-      { name: "Beginner Course", minHeight: "from 140 cm", description: "Ideal for families and climbing beginners. Varied elements at moderate height.", badge: "", courses: [{ name: "A1", color: "blue" }, { name: "A2", color: "blue" }, { name: "A3", color: "blue" }, { name: "A4", color: "blue" }] },
+      { name: "Children's Course", minHeight: "120–140 cm", description: "The perfect start for little adventurers! Low height, lots of fun and child-friendly stations.", badge: "", courses: [{ name: "K1", color: "yellow" }, { name: "K2", color: "yellow" }], specialCourse: { name: "MiDi", color: "yellow-blue", note: "Only for fit children – with adult supervision" } },
+      { name: "Zip Lines", minHeight: "from 140 cm", description: "Fast zip lines through the forest – for those seeking thrills!", badge: "", courses: [{ name: "S1", color: "green" }, { name: "S2", color: "green" }, { name: "S3", color: "green" }], attraction: { name: "Jump & Fly", description: "Fly through the treetops – secured by rope for maximum fun!", minHeight: "from 140 cm" } },
+      { name: "Beginner Course", minHeight: "from 140 cm", description: "Ideal for families and climbing beginners. Varied elements at moderate height.", badge: "", courses: [{ name: "MiDi", color: "yellow-blue" }, { name: "A1", color: "blue" }, { name: "A2", color: "blue" }, { name: "A3", color: "blue" }, { name: "A4", color: "blue" }] },
       { name: "Advanced Course", minHeight: "from 140 cm", description: "Challenging stations for experienced climbers. This is where it gets really demanding!", badge: "", courses: [{ name: "B1", color: "red" }, { name: "B2", color: "red" }, { name: "B3", color: "red" }] },
     ],
     attractions: [
@@ -105,10 +56,11 @@ export const en: Translations = {
     description: "All prices include safety equipment and professional instruction.",
     categories: [
       { category: "S", height: "120–140 cm", ageReq: "under 12 years", price: "€19", note: "Children's course" },
-      { category: "M", height: "from 140 cm", ageReq: "under 12 years", price: "€25", note: "All courses incl." },
+      { category: "M", height: "from 140 cm", ageReq: "under 12 years", price: "€25", note: "All courses incl.*" },
       { category: "L", height: "from 140 cm", ageReq: "from 12 years", price: "€30", note: "All courses incl." },
     ],
-    hint: "💡 Advance reservation recommended. The safety briefing takes approx. 30 minutes and is included in the price. Children under 12 only accompanied by an adult.",
+    hint: "💡 Advance reservation recommended. The safety briefing takes approx. 30 minutes and is included in the price.",
+    footnote: "* Only with adult supervision. One adult can supervise a maximum of two children.",
     link: "View all prices & details →",
     bestOffer: "Best Offer",
   },
@@ -197,7 +149,7 @@ export const en: Translations = {
     ctaDescription: "Secure your spot at Kletterwald Staufen now – advance reservation recommended!",
     categories: [
       { category: "S", height: "120–140 cm", ageReq: "under 12 years", price: "€19", note: "Children's course", details: "Access to children's course. Children under 12 only accompanied by an adult." },
-      { category: "M", height: "from 140 cm", ageReq: "under 12 years", price: "€25", note: "All courses incl.", details: "Access to all courses. Children under 12 only accompanied by an adult." },
+      { category: "M", height: "from 140 cm", ageReq: "under 12 years", price: "€25", note: "All courses incl.*", details: "Access to all courses. Children under 12 only accompanied by an adult." },
       { category: "L", height: "from 140 cm", ageReq: "from 12 years", price: "€30", note: "All courses incl.", details: "Unrestricted access to all courses incl. Base Jump & zip lines." },
     ],
   },

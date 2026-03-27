@@ -1,9 +1,16 @@
 import type { Metadata } from "next";
 import { buildMetadata } from "@/lib/metadata";
-import { de } from "@/i18n";
 
-export const metadata: Metadata = buildMetadata(de.meta.impressum, "/impressum");
+export const metadata: Metadata = buildMetadata(
+  {
+    title: "Impressum · Kletterwald Staufen",
+    description: "Impressum des Kletterwald Staufen mit allen Pflichtangaben gemaess TMG.",
+  },
+  "/impressum",
+);
 
-export default function ImpressumLayout({ children }: { children: React.ReactNode }) {
+export default function ImpressumLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
   return children;
 }

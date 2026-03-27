@@ -11,58 +11,6 @@ export const de = {
     },
     cta: "Jetzt buchen",
   },
-  meta: {
-    home: {
-      title: "Kletterwald Staufen – Abenteuer im Schwarzwald",
-      description:
-        "Erlebe Kletterabenteuer im größten Kletterpark Südbadens. 15+ Parcours, 200+ Kletter-Elemente – Spaß für die ganze Familie im Schwarzwald.",
-    },
-    impressum: {
-      title: "Impressum · Kletterwald Staufen",
-      description: "Impressum des Kletterwald Staufen – Angaben gemäß § 5 TMG.",
-    },
-    datenschutz: {
-      title: "Datenschutz · Kletterwald Staufen",
-      description: "Datenschutzerklärung des Kletterwald Staufen – Informationen zum Umgang mit deinen Daten.",
-    },
-    agb: {
-      title: "AGB · Kletterwald Staufen",
-      description: "Allgemeine Geschäftsbedingungen des Kletterwald Staufen.",
-    },
-    oeffnungszeiten: {
-      title: "Öffnungszeiten · Kletterwald Staufen",
-      description:
-        "Aktuelle Öffnungszeiten des Kletterwald Staufen. Saison, Feiertage und Sonderöffnungszeiten auf einen Blick.",
-    },
-    ueberUns: {
-      title: "Über uns · Kletterwald Staufen",
-      description:
-        "Erfahre mehr über den Kletterwald Staufen – seit über 15 Jahren der größte Kletterpark in Südbaden mit Leidenschaft, Sicherheit und Natur.",
-    },
-    kontakt: {
-      title: "Kontakt · Kletterwald Staufen",
-      description:
-        "Kontaktiere den Kletterwald Staufen für Fragen, Reservierungen und Gruppenanfragen. Wir helfen dir gerne weiter.",
-    },
-    jobs: {
-      title: "Jobs · Kletterwald Staufen",
-      description: "Offene Stellen im Kletterwald Staufen. Werde Teil unseres Teams und arbeite in der Natur des Schwarzwalds.",
-    },
-    preise: {
-      title: "Preise & Tickets · Kletterwald Staufen",
-      description:
-        "Faire Preise für Kinder, Jugendliche und Erwachsene im Kletterwald Staufen. Jetzt Tickets sichern und Kletterabenteuer erleben.",
-    },
-    abenteuer: {
-      title: "Abenteuer · Kletterwald Staufen",
-      description:
-        "Parcours, Attraktionen und Schatzsuche im Kletterwald Staufen – Abenteuer für die ganze Familie im Schwarzwald.",
-    },
-    notFound: {
-      title: "Seite nicht gefunden · Kletterwald Staufen",
-      description: "Die gesuchte Seite wurde nicht gefunden.",
-    },
-  },
   hero: {
     title: "Willkommen im Kletterwald Staufen",
     subtitle: "Action im Schwarzwald",
@@ -90,14 +38,14 @@ export const de = {
     attractionsDescription: "Noch mehr Action für Adrenalinjunkies!",
     minAge: "ab 12 Jahre",
     items: [
-      { name: "Kinderparcours", minHeight: "120–140 cm", description: "Der perfekte Einstieg für kleine Abenteurer! Niedrige Höhe, viel Spaß und kindgerechte Stationen.", badge: "", courses: [{ name: "K1", color: "yellow" }, { name: "K2", color: "yellow" }, { name: "MiDi", color: "yellow-blue" }] },
-      { name: "Seilrutschen", minHeight: "ab 140 cm", description: "Rasante Seilrutschen durch den Wald – für alle, die den Nervenkitzel suchen!", badge: "", courses: [{ name: "S1", color: "green" }, { name: "S2", color: "green" }] },
-      { name: "Einsteiger-Parcours", minHeight: "ab 140 cm", description: "Ideal für Familien und Kletterneulinge. Abwechslungsreiche Elemente in moderater Höhe.", badge: "", courses: [{ name: "A1", color: "blue" }, { name: "A2", color: "blue" }, { name: "A3", color: "blue" }, { name: "A4", color: "blue" }] },
+      { name: "Kinderparcours", minHeight: "120–140 cm", description: "Der perfekte Einstieg für kleine Abenteurer! Niedrige Höhe, viel Spaß und kindgerechte Stationen.", badge: "", courses: [{ name: "K1", color: "yellow" }, { name: "K2", color: "yellow" }], specialCourse: { name: "MiDi", color: "yellow-blue", note: "Nur für fitte Kinder – in Begleitung eines Erwachsenen" } },
+      { name: "Seilrutschen", minHeight: "ab 140 cm", description: "Rasante Seilrutschen durch den Wald – für alle, die den Nervenkitzel suchen!", badge: "", courses: [{ name: "S1", color: "green" }, { name: "S2", color: "green" }, { name: "S3", color: "green" }], attraction: { name: "Jump & Fly", description: "Fliege durch die Baumwipfel – gesichert am Seil für maximalen Spaß!", minHeight: "ab 140 cm" } },
+      { name: "Einsteiger-Parcours", minHeight: "ab 140 cm", description: "Ideal für Familien und Kletterneulinge. Abwechslungsreiche Elemente in moderater Höhe.", badge: "", courses: [{ name: "MiDi", color: "yellow-blue" }, { name: "A1", color: "blue" }, { name: "A2", color: "blue" }, { name: "A3", color: "blue" }, { name: "A4", color: "blue" }] },
       { name: "Fortgeschrittene", minHeight: "ab 140 cm", description: "Anspruchsvolle Stationen für erfahrene Kletterer. Hier wird's richtig herausfordernd!", badge: "", courses: [{ name: "B1", color: "red" }, { name: "B2", color: "red" }, { name: "B3", color: "red" }] },
     ],
     attractions: [
       { name: "Base Jump", minHeight: "ab 140 cm", description: "Springe aus schwindelerregender Höhe – der ultimative Adrenalinkick!" },
-      { name: "Jump & Fly", minHeight: "ab 140 cm", description: "Fliege durch die Baumwipfel – gesichert am Seil für maximalen Spaß!" },
+      { name: "Jump & Fly", minHeight: "ab 140 cm", description: "Fliege durch die Baumwipfel – am Seil gesichert für maximalen Spaß!" },
     ],
   },
   preise: {
@@ -106,10 +54,11 @@ export const de = {
     description: "Alle Preise beinhalten Sicherheitsausrüstung und professionelle Einweisung.",
     categories: [
       { category: "S", height: "120–140 cm", ageReq: "unter 12 Jahre", price: "19 €", note: "Kinderparcours" },
-      { category: "M", height: "ab 140 cm", ageReq: "unter 12 Jahre", price: "25 €", note: "Alle Parcours inkl." },
+      { category: "M", height: "ab 140 cm", ageReq: "unter 12 Jahre", price: "25 €", note: "Alle Parcours inkl.*" },
       { category: "L", height: "ab 140 cm", ageReq: "ab 12 Jahre", price: "30 €", note: "Alle Parcours inkl." },
     ],
-    hint: "💡 Vorab-Reservierung empfohlen. Die Sicherheitseinweisung dauert ca. 30 Minuten und ist im Preis enthalten. Kinder unter 12 Jahren nur in Begleitung eines Erwachsenen.",
+    hint: "💡 Vorab-Reservierung empfohlen. Die Sicherheitseinweisung dauert ca. 30 Minuten und ist im Preis enthalten.",
+    footnote: "* Nur in Begleitung eines Erwachsenen. Ein Erwachsener kann max. zwei Kinder betreuen.",
     link: "Alle Preise & Details ansehen →",
     bestOffer: "Bestes Angebot",
   },
@@ -199,7 +148,7 @@ export const de = {
     ctaDescription: "Sichere dir jetzt deinen Platz im Kletterwald Staufen – Vorab-Reservierung empfohlen!",
     categories: [
       { category: "S", height: "120–140 cm", ageReq: "unter 12 Jahre", price: "19 €", note: "Kinderparcours", details: "Zugang zum Kinderparcours. Kinder unter 12 Jahren nur in Begleitung eines Erwachsenen." },
-      { category: "M", height: "ab 140 cm", ageReq: "unter 12 Jahre", price: "25 €", note: "Alle Parcours inkl.", details: "Zugang zu allen Parcours. Kinder unter 12 Jahren nur in Begleitung eines Erwachsenen." },
+      { category: "M", height: "ab 140 cm", ageReq: "unter 12 Jahre", price: "25 €", note: "Alle Parcours inkl.*", details: "Zugang zu allen Parcours. Kinder unter 12 Jahren nur in Begleitung eines Erwachsenen." },
       { category: "L", height: "ab 140 cm", ageReq: "ab 12 Jahre", price: "30 €", note: "Alle Parcours inkl.", details: "Uneingeschränkter Zugang zu allen Parcours inkl. Base Jump & Seilrutschen." },
     ],
   },

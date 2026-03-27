@@ -1,20 +1,20 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Providers } from "./providers";
-import { AppShell } from "./AppShell";
 import { buildMetadata } from "@/lib/metadata";
-import { de } from "@/i18n";
 
-export const metadata: Metadata = buildMetadata(de.meta.home, "/");
+export const metadata: Metadata = buildMetadata({
+  title: "Kletterwald Staufen",
+  description:
+    "Action im Schwarzwald: Kletterparcours, Seilrutschen und Abenteuer fuer die ganze Familie.",
+});
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return (
-    <html lang="de">
-      <body>
-        <Providers>
-          <AppShell>{children}</AppShell>
-        </Providers>
-      </body>
-    </html>
-  );
-}
+const RootLayout = ({ children }: { children: React.ReactNode }) => (
+  <html lang="de">
+    <body>
+      <Providers>{children}</Providers>
+    </body>
+  </html>
+);
+
+export default RootLayout;

@@ -2,11 +2,12 @@
 
 import EventsSection from "@/components/EventsSection";
 import { Baby, User, Users, Star, ShieldCheck, Clock, HelpCircle, GraduationCap, Briefcase, Ruler, Cake } from "lucide-react";
-import preiseHeroBg from "@/assets/preise-hero-bg.jpg";
+import preiseHeroBg from "@/assets/hero-bg-2.jpg";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import Link from "next/link";
 import { BOOKING_URL } from "@/lib/constants";
 import { useLanguage } from "@/i18n/LanguageContext";
 
@@ -150,7 +151,10 @@ const Preise = () => {
               );
             })}
           </div>
-          <p className="text-sm text-muted-foreground text-center mt-6 max-w-2xl mx-auto">
+          <p className="text-xs text-muted-foreground text-center mt-6 max-w-2xl mx-auto italic">
+            {t.preise.footnote}
+          </p>
+          <p className="text-sm text-muted-foreground text-center mt-2 max-w-2xl mx-auto">
             {t.preise.hint}
           </p>
           <div className="text-center mt-6">

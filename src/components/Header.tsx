@@ -1,12 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import { Menu } from "lucide-react";
-import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
-import logo from "@/assets/logo.png";
+import { Menu, TreePine } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
+import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 import { BOOKING_URL } from "@/lib/constants";
 import { useLanguage } from "@/i18n/LanguageContext";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
@@ -45,7 +44,7 @@ const Header = () => {
       <div className="container mx-auto flex items-center justify-between h-16 px-4">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 group">
-          <img src={logo.src} alt="Kletterwald Staufen" className="h-9 w-9 group-hover:scale-110 transition-transform" />
+          <TreePine className="h-9 w-9 text-primary group-hover:scale-110 transition-transform" />
           <div className="flex items-center">
             <span className="text-lg font-bold text-foreground tracking-tight">
               Kletterwald <span className="text-primary">Staufen</span>
@@ -108,7 +107,7 @@ const Header = () => {
             <SheetContent side="right" className="bg-card w-72">
               <SheetTitle className="sr-only">Navigation</SheetTitle>
               <div className="flex items-center gap-2 mb-8 mt-2">
-                <img src={logo.src} alt="Kletterwald Staufen" className="h-8 w-8" />
+                <TreePine className="h-8 w-8 text-primary" />
                 <span className="font-bold text-foreground">Kletterwald Staufen</span>
               </div>
               <Button

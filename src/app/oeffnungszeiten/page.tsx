@@ -1,11 +1,11 @@
 "use client";
 
-import Link from "next/link";
 import { Clock, Sun, Leaf, Snowflake, CalendarDays, Car, TrainFront, CloudRain } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import { BOOKING_URL } from "@/lib/constants";
-import preiseHeroBg from "@/assets/preise-hero-bg.jpg";
+import preiseHeroBg from "@/assets/hero-bg-2.jpg";
 
 type Season = "hauptsaison" | "uebergang" | "winterpause";
 
@@ -136,7 +136,7 @@ const Oeffnungszeiten = () => {
                 </div>
                 <h3 className="font-bold text-foreground mb-2">ÖPNV</h3>
                 <p className="text-muted-foreground text-sm">
-                  Zuglinie S3, Haltestelle „Etzenbach“. Von Staufen Bahnhof ca. 10 Minuten Fahrt. Fahrpläne unter VAG Freiburg.
+                  Zuglinie S3, Haltestelle „Etzenbach“. Von Staufen Bahnhof ca. 10 Minuten Fahrt. Fahrplaene unter VAG Freiburg.
                 </p>
               </CardContent>
             </Card>

@@ -1,3 +1,5 @@
+"use client";
+
 // Original calendar imports preserved for future use:
 // import { useMemo, useState } from "react";
 // import { DayPicker } from "react-day-picker";

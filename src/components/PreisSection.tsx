@@ -1,3 +1,5 @@
+"use client";
+
 import { Baby, User, Users, Ruler, Cake } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { useLanguage } from "@/i18n/LanguageContext";
@@ -60,7 +62,10 @@ const PreisSection = () => {
         </div>
 
         <div className="text-center mt-10 space-y-4">
-          <p className="text-sm text-muted-foreground max-w-lg mx-auto">
+          <p className="text-xs text-muted-foreground max-w-lg mx-auto italic">
+            {t.preise.footnote}
+          </p>
+          <p className="text-sm text-muted-foreground max-w-lg mx-auto mt-2">
             {t.preise.hint}
           </p>
           <a

@@ -1,3 +1,5 @@
+"use client";
+
 import { Cake, Briefcase, GraduationCap, TreePine, MountainSnow } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";

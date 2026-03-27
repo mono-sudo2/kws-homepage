@@ -4,7 +4,7 @@ import { ShieldCheck, TreePine, Heart, Mountain, Calendar, Users, Trophy, Puzzle
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { BOOKING_URL } from "@/lib/constants";
-import preiseHeroBg from "@/assets/preise-hero-bg.jpg";
+import preiseHeroBg from "@/assets/hero-bg-2.jpg";
 
 const WavyBottom = ({ fill }: { fill: string }) => (
   <div className="absolute bottom-0 left-0 right-0">

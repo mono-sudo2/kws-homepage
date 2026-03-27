@@ -1,3 +1,5 @@
+"use client";
+
 import { TreePine, Shield, Smile, Zap } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { useLanguage } from "@/i18n/LanguageContext";

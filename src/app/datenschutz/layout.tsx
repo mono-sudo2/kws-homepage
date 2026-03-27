@@ -1,9 +1,17 @@
 import type { Metadata } from "next";
 import { buildMetadata } from "@/lib/metadata";
-import { de } from "@/i18n";
 
-export const metadata: Metadata = buildMetadata(de.meta.datenschutz, "/datenschutz");
+export const metadata: Metadata = buildMetadata(
+  {
+    title: "Datenschutz · Kletterwald Staufen",
+    description:
+      "Datenschutzerklaerung des Kletterwald Staufen mit Informationen zur Verarbeitung personenbezogener Daten.",
+  },
+  "/datenschutz",
+);
 
-export default function DatenschutzLayout({ children }: { children: React.ReactNode }) {
+export default function DatenschutzLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
   return children;
 }

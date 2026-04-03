@@ -79,7 +79,7 @@ const faqs = [
   },
   {
     question: "Gibt es eine Alters- oder Größenbeschränkung?",
-    answer: "Kinder ab 6 Jahren und mindestens 120 cm Körpergröße dürfen auf den Kinderparcours. Ab 140 cm sind alle Parcours zugänglich. Kinder unter 12 müssen von einem Erwachsenen begleitet werden.",
+    answer: "Kinder ab 6 Jahren und mindestens 120 cm Körpergröße dürfen auf den Kinderparcours. Ab 130 cm sind alle Parcours zugänglich. Kinder bis 11 Jahre müssen von einem Erwachsenen begleitet werden.",
   },
   {
     question: "Brauche ich eine Einverständniserklärung?",

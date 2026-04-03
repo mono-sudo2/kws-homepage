@@ -59,7 +59,7 @@ export const de = {
 		items: [
 			{
 				name: "Kinderparcours",
-				minHeight: "120–140 cm",
+				minHeight: "bis 130 cm",
 				description:
 					"Der perfekte Einstieg für kleine Abenteurer! Niedrige Höhe, viel Spaß und kindgerechte Stationen.",
 				badge: "",
@@ -141,21 +141,21 @@ export const de = {
 		categories: [
 			{
 				category: "S",
-				height: "120–140 cm",
-				ageReq: "unter 12 Jahre",
+				height: "bis 130 cm",
+				ageReq: "bis 11 Jahre",
 				price: "19 €",
 				note: "Kinderparcours",
 			},
 			{
 				category: "M",
-				height: "ab 140 cm",
-				ageReq: "unter 12 Jahre",
+				height: "ab 130 cm",
+				ageReq: "bis 11 Jahre",
 				price: "25 €",
 				note: "Alle Parcours inkl.*",
 			},
 			{
 				category: "L",
-				height: "ab 140 cm",
+				height: "ab 130 cm",
 				ageReq: "ab 12 Jahre",
 				price: "30 €",
 				note: "Alle Parcours inkl.",
@@ -235,7 +235,7 @@ export const de = {
 		items: [
 			{
 				question: "Ab welchem Alter darf man klettern?",
-				answer: "Kinder ab 6 Jahren und einer Mindestgröße von 120 cm dürfen auf unseren Kinderparcours klettern. Ab 140 cm Körpergröße sind alle Parcours zugänglich. Kinder unter 12 Jahren müssen von einem Erwachsenen begleitet werden.",
+				answer: "Kinder ab 6 Jahren und einer Mindestgröße von 120 cm dürfen auf unseren Kinderparcours klettern. Ab 130 cm Körpergröße sind alle Parcours zugänglich. Kinder bis 11 Jahre müssen von einem Erwachsenen begleitet werden.",
 			},
 			{
 				question: "Brauche ich Vorkenntnisse?",
@@ -333,7 +333,7 @@ export const de = {
 			},
 			{
 				question: "Gibt es eine Alters- oder Größenbeschränkung?",
-				answer: "Kinder ab 6 Jahren und mindestens 120 cm Körpergröße dürfen auf den Kinderparcours. Ab 140 cm sind alle Parcours zugänglich. Kinder unter 12 müssen von einem Erwachsenen begleitet werden.",
+				answer: "Kinder ab 6 Jahren und mindestens 120 cm Körpergröße dürfen auf den Kinderparcours. Ab 130 cm sind alle Parcours zugänglich. Kinder bis 11 Jahre müssen von einem Erwachsenen begleitet werden.",
 			},
 		],
 		ctaTitle: "Bereit für dein Abenteuer?",
@@ -342,25 +342,25 @@ export const de = {
 		categories: [
 			{
 				category: "S",
-				height: "120–140 cm",
-				ageReq: "unter 12 Jahre",
+				height: "bis 130 cm",
+				ageReq: "bis 11 Jahre",
 				price: "19 €",
 				note: "Kinderparcours",
 				details:
-					"Zugang zum Kinderparcours. Kinder unter 12 Jahren nur in Begleitung eines Erwachsenen.",
+					"Zugang zum Kinderparcours. Kinder bis 11 Jahre nur in Begleitung eines Erwachsenen.",
 			},
 			{
 				category: "M",
-				height: "ab 140 cm",
-				ageReq: "unter 12 Jahre",
+				height: "ab 130 cm",
+				ageReq: "bis 11 Jahre",
 				price: "25 €",
 				note: "Alle Parcours inkl.*",
 				details:
-					"Zugang zu allen Parcours. Kinder unter 12 Jahren nur in Begleitung eines Erwachsenen.",
+					"Zugang zu allen Parcours. Kinder bis 11 Jahre nur in Begleitung eines Erwachsenen.",
 			},
 			{
 				category: "L",
-				height: "ab 140 cm",
+				height: "ab 130 cm",
 				ageReq: "ab 12 Jahre",
 				price: "30 €",
 				note: "Alle Parcours inkl.",

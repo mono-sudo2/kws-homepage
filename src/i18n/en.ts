@@ -60,7 +60,7 @@ export const en: Translations = {
 		items: [
 			{
 				name: "Children's Course",
-				minHeight: "120–140 cm",
+				minHeight: "up to 130 cm",
 				description:
 					"The perfect start for little adventurers! Low height, lots of fun and child-friendly stations.",
 				badge: "",
@@ -89,7 +89,7 @@ export const en: Translations = {
 					name: "Jump & Fly",
 					description:
 						"Fly through the treetops – secured by rope for maximum fun!",
-					minHeight: "from 140 cm",
+					minHeight: "from 130 cm",
 				},
 			},
 			{
@@ -142,21 +142,21 @@ export const en: Translations = {
 		categories: [
 			{
 				category: "S",
-				height: "120–140 cm",
+				height: "up to 130 cm",
 				ageReq: "under 12 years",
 				price: "€19",
 				note: "Children's course",
 			},
 			{
 				category: "M",
-				height: "from 140 cm",
+				height: "from 130 cm",
 				ageReq: "under 12 years",
 				price: "€25",
 				note: "All courses incl.*",
 			},
 			{
 				category: "L",
-				height: "from 140 cm",
+				height: "from 130 cm",
 				ageReq: "from 12 years",
 				price: "€30",
 				note: "All courses incl.",
@@ -233,7 +233,7 @@ export const en: Translations = {
 		items: [
 			{
 				question: "What is the minimum age for climbing?",
-				answer: "Children from 6 years and a minimum height of 120 cm may climb on our children's course. From 140 cm height, all courses are accessible. Children under 12 must be accompanied by an adult.",
+				answer: "Children from 6 years and a minimum height of 120 cm may climb on our children's course. From 130 cm height, all courses are accessible. Children under 12 must be accompanied by an adult.",
 			},
 			{
 				question: "Do I need prior experience?",
@@ -331,7 +331,7 @@ export const en: Translations = {
 			},
 			{
 				question: "Are there age or height restrictions?",
-				answer: "Children from 6 years and at least 120 cm height may use the children's course. From 140 cm, all courses are accessible. Children under 12 must be accompanied by an adult.",
+				answer: "Children from 6 years and at least 120 cm height may use the children's course. From 130 cm, all courses are accessible. Children under 12 must be accompanied by an adult.",
 			},
 		],
 		ctaTitle: "Ready for Your Adventure?",
@@ -340,7 +340,7 @@ export const en: Translations = {
 		categories: [
 			{
 				category: "S",
-				height: "120–140 cm",
+				height: "up to 130 cm",
 				ageReq: "under 12 years",
 				price: "€19",
 				note: "Children's course",

@@ -54,7 +54,25 @@ const ReservierungSection = () => {
           </p>
         </div>
 
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-2xl mx-auto flex flex-col gap-8">
+          <div>
+            <h3 className="text-center text-lg font-semibold text-primary-foreground mb-3">Live-Status</h3>
+            <iframe
+              src="https://booking.touritickets.de/embed/07320856-dcc2-42cf-91f2-09c8e789ebb0/status"
+              className="w-full max-w-xl mx-auto block min-h-[120px] rounded-2xl border-0"
+              title="Aktueller Öffnungsstatus"
+            />
+          </div>
+
+          <div>
+            <h3 className="text-center text-lg font-semibold text-primary-foreground mb-3">Nächste Öffnungszeit</h3>
+            <iframe
+              src="https://booking.touritickets.de/embed/07320856-dcc2-42cf-91f2-09c8e789ebb0/next-opening"
+              className="w-full max-w-xl mx-auto block min-h-[80px] rounded-2xl border-0"
+              title="Nächste Öffnungszeit"
+            />
+          </div>
+
           <iframe
             src="https://booking.touritickets.de/embed/07320856-dcc2-42cf-91f2-09c8e789ebb0/calendar"
             className="w-full min-h-[700px] rounded-2xl border-0"

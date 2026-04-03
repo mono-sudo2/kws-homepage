@@ -62,7 +62,7 @@ export const fr: Translations = {
 		items: [
 			{
 				name: "Parcours Enfants",
-				minHeight: "120–140 cm",
+				minHeight: "jusqu'à 130 cm",
 				description:
 					"Le début parfait pour les petits aventuriers ! Faible hauteur, beaucoup de plaisir et des stations adaptées aux enfants.",
 				badge: "",
@@ -91,7 +91,7 @@ export const fr: Translations = {
 					name: "Jump & Fly",
 					description:
 						"Volez à travers les cimes – attaché au câble pour un maximum de plaisir !",
-					minHeight: "à partir de 140 cm",
+					minHeight: "à partir de 130 cm",
 				},
 			},
 			{
@@ -144,21 +144,21 @@ export const fr: Translations = {
 		categories: [
 			{
 				category: "S",
-				height: "120–140 cm",
+				height: "jusqu'à 130 cm",
 				ageReq: "moins de 12 ans",
 				price: "19 €",
 				note: "Parcours enfants",
 			},
 			{
 				category: "M",
-				height: "dès 140 cm",
+				height: "dès 130 cm",
 				ageReq: "moins de 12 ans",
 				price: "25 €",
 				note: "Tous parcours inclus*",
 			},
 			{
 				category: "L",
-				height: "à partir de 140 cm",
+				height: "à partir de 130 cm",
 				ageReq: "dès 12 ans",
 				price: "30 €",
 				note: "Tous parcours inclus",
@@ -235,7 +235,7 @@ export const fr: Translations = {
 		items: [
 			{
 				question: "À partir de quel âge peut-on grimper ?",
-				answer: "Les enfants à partir de 6 ans et d'une taille minimale de 120 cm peuvent grimper sur notre parcours enfants. À partir de 140 cm, tous les parcours sont accessibles. Les enfants de moins de 12 ans doivent être accompagnés d'un adulte.",
+				answer: "Les enfants à partir de 6 ans et d'une taille minimale de 120 cm peuvent grimper sur notre parcours enfants. À partir de 130 cm, tous les parcours sont accessibles. Les enfants de moins de 12 ans doivent être accompagnés d'un adulte.",
 			},
 			{
 				question: "Ai-je besoin d'expérience préalable ?",
@@ -333,7 +333,7 @@ export const fr: Translations = {
 			},
 			{
 				question: "Y a-t-il des restrictions d'âge ou de taille ?",
-				answer: "Les enfants à partir de 6 ans et d'au moins 120 cm peuvent accéder au parcours enfants. À partir de 140 cm, tous les parcours sont accessibles. Les enfants de moins de 12 ans doivent être accompagnés d'un adulte.",
+				answer: "Les enfants à partir de 6 ans et d'au moins 120 cm peuvent accéder au parcours enfants. À partir de 130 cm, tous les parcours sont accessibles. Les enfants de moins de 12 ans doivent être accompagnés d'un adulte.",
 			},
 		],
 		ctaTitle: "Prêt pour l'aventure ?",
@@ -342,7 +342,7 @@ export const fr: Translations = {
 		categories: [
 			{
 				category: "S",
-				height: "120–140 cm",
+				height: "jusqu'à 130 cm",
 				ageReq: "moins de 12 ans",
 				price: "19 €",
 				note: "Parcours enfants",

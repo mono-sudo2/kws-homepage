@@ -62,16 +62,16 @@ const Oeffnungszeiten = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto flex flex-col gap-6">
             <div>
-              <h2 className="text-center text-lg font-semibold text-foreground mb-3">Live-Status</h2>
+              <h2 className="text-center text-base font-semibold text-foreground mb-2">Live-Status</h2>
               <iframe
                 src="https://booking.touritickets.de/embed/07320856-dcc2-42cf-91f2-09c8e789ebb0/status"
-                className="w-full max-w-xl mx-auto block min-h-[120px] rounded-2xl border-0"
+                className="w-full max-w-xl mx-auto block min-h-[35px] h-[75px] rounded-2xl border-0"
                 title="Aktueller Öffnungsstatus"
               />
-              <h2 className="text-center text-lg font-semibold text-foreground mb-3 mt-8">Nächste Öffnungszeit</h2>
+              <h2 className="text-center text-base font-semibold text-foreground mb-2 mt-6">Nächste Öffnungszeit</h2>
               <iframe
                 src="https://booking.touritickets.de/embed/07320856-dcc2-42cf-91f2-09c8e789ebb0/next-opening"
-                className="w-full max-w-xl mx-auto block min-h-[80px] rounded-2xl border-0"
+                className="w-full max-w-xl mx-auto block min-h-[35px] h-[125px] rounded-2xl border-0"
                 title="Nächste Öffnungszeit"
               />
             </div>
